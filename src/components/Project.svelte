@@ -3,7 +3,7 @@
 </script>
 
 <div class="project">
-    <span>Projects</span>
+    <span><i class="fa-solid fa-computer"></i>Projects</span>
     <div>
         {#each projects as project}
             <span class="title">{project.name} | {project.company}</span>
@@ -78,5 +78,9 @@
         text-align: justify;
         padding: 1rem;
         text-decoration: underline;
+    }
+
+    .project > span > i {
+        margin-right: 5px;
     }
 </style>

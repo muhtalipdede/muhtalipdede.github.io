@@ -3,7 +3,7 @@
 </script>
 
 <div class="language">
-    <span>Languages</span>
+    <span><i class="fa-solid fa-earth-americas"></i>Languages</span>
     <div>
         {#each languages as language}
             <span class="title">{language.name}</span>
@@ -44,5 +44,9 @@
         text-align: justify;
         padding: 1rem;
         text-decoration: underline;
+    }
+
+    .language > span > i {
+        margin-right: 5px;
     }
 </style>

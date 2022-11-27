@@ -3,7 +3,7 @@
 </script>
 
 <div class="award">
-    <span>Awards</span>
+    <span><i class="fa-solid fa-award"></i>Awards</span>
     {#each awards as award}
         <div>
             <a href="{award.url}"><span>{award.name} | {award.description}</span></a>
@@ -55,5 +55,9 @@
         text-align: justify;
         padding: 1rem;
         text-decoration: underline;
+    }
+
+    .award > span > i {
+        margin-right: 5px;
     }
 </style>

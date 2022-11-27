@@ -3,7 +3,7 @@
 </script>
 
 <div class="education">
-    <span>Education</span>
+    <span><i class="fa-solid fa-book"></i>Education</span>
     <div>
         {#each education as item}
             <span class="title">{item.university} - {item.department}</span>
@@ -61,5 +61,9 @@
         text-align: justify;
         padding: 1rem;
         text-decoration: underline;
+    }
+
+    .education > span > i {
+        margin-right: 5px;
     }
 </style>

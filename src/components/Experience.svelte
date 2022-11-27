@@ -3,7 +3,7 @@
 </script>
 
 <div class="experience">
-    <span>Experiences</span>
+    <span><i class="fa-solid fa-briefcase"></i>Experiences</span>
     <div>
         {#each experience as item}
             <span class="title">{item.company} - {item.position}</span>
@@ -49,5 +49,8 @@
         text-align: justify;
         padding: 1rem;
         text-decoration: underline;
+    }
+    .experience > span > i {
+        margin-right: 5px;
     }
 </style>
