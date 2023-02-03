@@ -1,8 +1,12 @@
 <script>
+    import NavigationBar from "../components/NavigationBar.svelte";
+
+
 </script>
 
 <div class="app">
   <main>
+    <NavigationBar />
     <slot />
   </main>
 </div>

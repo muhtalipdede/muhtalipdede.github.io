@@ -5,7 +5,6 @@
   import photo from "$lib/assets/profile.jpeg";
 
   const profile = data.profile;
-  const social = data.social;
 </script>
 
 <div class="profile__image__container">
@@ -20,7 +19,7 @@
     <a href="tel:{profile.phone}">{profile.phone}</a>
   </span>
   <span>{profile.location.city} {profile.location.country}</span>
-  <Social {social} />
+  <Social />
 </div>
 
 <div class="profile">
@@ -34,6 +33,26 @@
 </div>
 
 <style>
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes changeColor {
+    from {
+      color: #000;
+    }
+    to {
+      color: #fff;
+    }
+  }
+
   .profile__image__container {
     display: flex;
     flex-direction: column;
@@ -49,8 +68,8 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
+
+    animation: fadeInDown 1s ease-in-out;
   }
 
   .profile__image__container span a {

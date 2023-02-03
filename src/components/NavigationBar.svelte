@@ -9,12 +9,20 @@
 </div>
 
 <style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .navbar__content {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 1rem;
-    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
   }
 
   .navbar__content > a {
@@ -25,15 +33,9 @@
     color: #000;
   }
 
-  @media (min-width: 600px) {
-    .navbar__content {
-      width: 60%;
-    }
-  }
-
-  @media (min-width: 800px) {
-    .navbar__content {
-      width: 40%;
-    }
+  .navbar__content > a:hover {
+    background: -webkit-linear-gradient(#dd9999, #0d2f93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 </style>

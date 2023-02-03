@@ -1,23 +1,22 @@
 <script>
-
+    
 </script>
 
-<div class="home__content">
-  <h1>Home</h1>
-  <p>Home page</p>
+<div class="blog__content">
+  <h1>Blog</h1>
+  <p>Blog page</p>
 </div>
 
 <style>
-  .home__content {
+  .blog__content {
     display: flex;
     flex-direction: column;
   }
-
-  .home__content > h1 {
+  
+  .blog__content > h1 {
     font-size: 1.5rem;
     font-weight: 600;
     text-align: justify;
     width: 100%;
   }
 </style>
-
