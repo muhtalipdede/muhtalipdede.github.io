@@ -1,63 +1,48 @@
 <script>
-    export let awards;
+  import data from "../data/resume";
+
+  const awards = data.awards;
 </script>
 
+<div class="award__title">Awards</div>
 <div class="award">
-    <span><i class="fa-solid fa-award"></i>Awards</span>
-    {#each awards as award}
-        <div>
-            <a href="{award.url}"><span>{award.name} | {award.description}</span></a>
-        </div>
-    {/each}
+  {#each awards as award}
+    <div>
+      <a href={award.url}><span>{award.name} | {award.description}</span></a>
+    </div>
+  {/each}
 </div>
 
 <style>
-    .award {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 0rem 1rem;
-        margin: 0rem 1rem;
-    }
+  .award__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: justify;
+    width: 100%;
+  }
 
-    .award > div {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 1rem;
-    }
+  .award {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .award > div > a {
-        font-family: Lato, sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        margin-top: 5px;
-        text-align: justify;
-        color: #000;
-        text-decoration: none;
-    }
+  .award > div {
+    padding: 1rem 0;
+  }
 
-    .award > div > a > span {
-        font-family: Lato, sans-serif;
-        font-size: 1rem;
-        font-weight: 300;
-        margin-top: 5px;
-        text-align: justify;
-    }
+  .award > div > a {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 5px;
+    text-align: justify;
+    color: #000;
+    text-decoration: none;
+  }
 
-    .award > span {
-        font-family: Lato, sans-serif;
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-top: 5px;
-        text-align: justify;
-        padding: 1rem;
-        text-decoration: underline;
-    }
-
-    .award > span > i {
-        margin-right: 5px;
-    }
+  .award > div > a > span {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 5px;
+    text-align: justify;
+  }
 </style>

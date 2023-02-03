@@ -1,52 +1,40 @@
 <script>
-    export let languages;
+  import data from "../data/resume";
+
+  const languages = data.languages;
 </script>
 
+<div class="language__title">Languages</div>
 <div class="language">
-    <span><i class="fa-solid fa-earth-americas"></i>Languages</span>
-    <div>
-        {#each languages as language}
-            <span class="title">{language.name}</span>
-        {/each}
-    </div>
+  <div class="language__item">
+    {#each languages as language}
+      <span class="title">{language.name}</span>
+    {/each}
+  </div>
 </div>
 
 <style>
-    .language {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 0rem 1rem;
-        margin: 0rem 1rem;
-    }
+  .language__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: justify;
+    width: 100%;
+  }
 
-    .language > div {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
+  .language {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .language > div > .title {
-        font-family: Lato, sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        text-align: justify;
-        margin-top: 5px;
-        margin: 0rem 1rem;
-    }
+  .language__item {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .language > span {
-        font-family: Lato, sans-serif;
-        font-size: 1.2rem;
-        font-weight: 600;
-        text-align: justify;
-        padding: 1rem;
-        text-decoration: underline;
-    }
-
-    .language > span > i {
-        margin-right: 5px;
-    }
+  .language > div > .title {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 5px;
+  }
 </style>
