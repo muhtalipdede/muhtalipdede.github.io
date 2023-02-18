@@ -24,6 +24,12 @@ const resume = {
   },
   experiences: [
     {
+      company: "Aldo Green",
+      position: "Senior Software Engineer",
+      start: "Dev 2022",
+      end: "Jan 2023",
+    },
+    {
       company: "Datapad",
       position: "Founding Engineer",
       start: "Jan 2022",
@@ -59,6 +65,22 @@ const resume = {
     },
   ],
   projects: [
+    {
+      name: "Aldo Green Web App",
+      company: "Aldo Green",
+      description: "This project is an e-commerce project. Users can buy sonar panels from the website. Users can follow their orders on the website.",
+      stacks: [
+        "Fastify",
+        "NextJS",
+        "MySQL",
+        "Twilio",
+        "NodeJS",
+        "ReactJS",
+        "Typescript",
+        "TypeORM",
+        "NextUI"
+      ],
+    },
     {
       name: "Datapad Mobile App",
       company: "Datapad",

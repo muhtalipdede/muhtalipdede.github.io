@@ -73,11 +73,9 @@
         flex-direction: column;
         width: 100%;
         margin-bottom: 20px;
-        border-radius: 10px;
+        border: 0.5px solid #ccc;
         min-height: 200px;
         cursor: pointer;
-        background-color: #000;
-        color: #fff;
         padding: 20px;
     }
 

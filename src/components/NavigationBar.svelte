@@ -1,9 +1,9 @@
 <script>
+  
 </script>
 
 <div class="navbar__content">
   <a href="/">Home</a>
-  <a href="/blog">Blog</a>
   <a href="/projects">Projects</a>
   <a href="/about">About</a>
 </div>
@@ -33,9 +33,4 @@
     color: #000;
   }
 
-  .navbar__content > a:hover {
-    background: -webkit-linear-gradient(#dd9999, #0d2f93);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 </style>
