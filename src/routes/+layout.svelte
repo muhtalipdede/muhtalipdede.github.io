@@ -1,8 +1,11 @@
 <script>
     import NavigationBar from "../components/NavigationBar.svelte";
-
-
 </script>
+
+<svelte:head>
+  <title>Muhtalip Dede</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</svelte:head>
 
 <div class="app">
   <main>

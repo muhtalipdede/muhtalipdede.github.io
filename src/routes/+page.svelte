@@ -1,6 +1,6 @@
 <script>
   import photo from "$lib/assets/profile.jpeg";
-    import Spacer from "../components/Spacer.svelte";
+  import Spacer from "../components/Spacer.svelte";
 </script>
 
 <div class="home__content">
@@ -56,6 +56,14 @@
       https://www.instagram.com/muhtalipdede5/
     </a>
   </p>
+
+  <Spacer height={2} />
+    <iframe
+      src="https://github.com/sponsors/muhtalipdede/card"
+      title="Sponsor muhtalipdede"
+      width="100%"
+      class="home__content__sponsor"
+    />
 </div>
 
 <style>
@@ -75,6 +83,11 @@
     text-decoration: underline;
     font-weight: bold;
     text-align: justify;
+  }
+
+  .home__content__sponsor {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
   }
 
   @keyframes fadeInDown {

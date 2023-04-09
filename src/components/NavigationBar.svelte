@@ -9,20 +9,17 @@
 </div>
 
 <style>
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
   .navbar__content {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
-    animation: fadeIn 0.5s ease-in-out;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #000;
+    border-radius: 5px;
+    z-index: 1;
   }
 
   .navbar__content > a {
@@ -33,4 +30,8 @@
     color: #000;
   }
 
+  .navbar__content > a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
 </style>

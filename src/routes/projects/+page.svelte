@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+    import type GithubProject from "../../interfaces/github-project";
+
     async function fetchGithubRepos() {
         const response = await fetch(
             "https://api.github.com/users/muhtalipdede/repos"
@@ -7,14 +9,10 @@
         return data;
     }
 
-    /**
-     * @type {any[]}
-     */
-    let data = [];
-
-    fetchGithubRepos().then((response) => {
+    let data: GithubProject[] = [];
+    fetchGithubRepos().then((response: GithubProject[]) => {
         data = response.filter((item) => item.fork === false).sort((a, b) => {
-            return new Date(b.updated_at) - new Date(a.updated_at);
+            return b.updated_at - a.updated_at;
         });
     });
 </script>
