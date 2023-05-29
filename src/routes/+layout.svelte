@@ -1,5 +1,6 @@
 <script>
-    import NavigationBar from "../components/NavigationBar.svelte";
+  import Footer from "../components/Footer.svelte";
+  import NavigationBar from "../components/NavigationBar.svelte";
 </script>
 
 <svelte:head>
@@ -8,10 +9,15 @@
 </svelte:head>
 
 <div class="app">
-  <main>
+  <div class="no-print">
     <NavigationBar />
+  </div>
+  <main>
     <slot />
   </main>
+  <div class="no-print">
+    <Footer />
+  </div>
 </div>
 
 <style>
@@ -19,6 +25,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   main {
@@ -30,6 +37,12 @@
     max-width: 50rem;
     margin: 0 auto;
     box-sizing: border-box;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  @media print {
+    .no-print,
+    .no-print * {
+      display: none !important;
+    }
   }
 </style>

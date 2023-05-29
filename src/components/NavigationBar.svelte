@@ -1,11 +1,16 @@
 <script>
-  
 </script>
 
 <div class="navbar__content">
-  <a href="/">Home</a>
-  <a href="/projects">Projects</a>
-  <a href="/about">About</a>
+  <a href="/" class="content__logo">
+    <i class="fa-solid fa-house" /> /home
+  </a>
+  <a href="/projects" class="content__logo">
+    <i class="fa-solid fa-briefcase" /> /projects
+  </a>
+  <a href="/about" class="content__logo">
+    <i class="fa-solid fa-user" /> /about
+  </a>
 </div>
 
 <style>
@@ -13,25 +18,28 @@
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #011633;
     border: 1px solid #000;
-    border-radius: 5px;
     z-index: 1;
   }
 
   .navbar__content > a {
-    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
-    color: #000;
+    color: white;
   }
 
   .navbar__content > a:hover {
+    color: #98bbeb;
+  }
+
+  .content__logo {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
     color: #000;
-    text-decoration: underline;
   }
 </style>

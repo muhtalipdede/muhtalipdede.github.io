@@ -11,16 +11,21 @@
 
     let data: GithubProject[] = [];
     fetchGithubRepos().then((response: GithubProject[]) => {
-        data = response.filter((item) => item.fork === false).sort((a, b) => {
-            return b.updated_at - a.updated_at;
-        });
+        data = response
+            .filter((item) => item.fork === false)
+            .sort((a, b) => {
+                return b.updated_at - a.updated_at;
+            });
     });
 </script>
 
 <div class="projects__container">
     {#each data as item}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div class="projects__container__item" on:click={() => window.open(item.html_url)}>
+        <div
+            class="projects__container__item"
+            on:click={() => window.open(item.html_url)}
+        >
             <h1>Project Name: {item.name}</h1>
             {#if item.description}
                 <p>Description: {item.description}</p>
@@ -46,13 +51,20 @@
             {/if}
 
             {#if item.created_at}
-                <span>Created At: {new Date(item.created_at).toLocaleDateString()}</span>
+                <span
+                    >Created At: {new Date(
+                        item.created_at
+                    ).toLocaleDateString()}</span
+                >
             {/if}
 
             {#if item.updated_at}
-                <span>Last Update: {new Date(item.updated_at).toLocaleDateString()}</span>
+                <span
+                    >Last Update: {new Date(
+                        item.updated_at
+                    ).toLocaleDateString()}</span
+                >
             {/if}
-
         </div>
     {/each}
 </div>

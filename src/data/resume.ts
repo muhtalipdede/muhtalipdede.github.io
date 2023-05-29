@@ -24,6 +24,12 @@ const resume = {
   },
   experiences: [
     {
+      company: "Berkut Technology",
+      position: "Senior Software Engineer",
+      start: "Feb 2023",
+      end: "Present",
+    },
+    {
       company: "Aldo Green",
       position: "Senior Software Engineer",
       start: "Dev 2022",

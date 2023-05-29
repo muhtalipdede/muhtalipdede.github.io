@@ -5,7 +5,9 @@
 
 <div class="home__content">
   <Spacer height={2} />
-  <img src={photo} alt="Muhtalip Dede" class="home__content__photo" />
+  <a href="/" class="home__content__logo">
+    <img src={photo} alt="Muhtalip Dede" class="home__content__photo" />
+  </a>
   <h1>Hi, I'm Muhtalip Dede</h1>
   <p>
     I'm a software engineer who is passionate about making open-source more
@@ -14,56 +16,31 @@
 
   <Spacer height={2} />
 
-  <p>
-    You can visit my Medium Account at
-    <a href="https://medium.com/@muhtalipdede">
-      https://medium.com/@muhtalipdede
+  <div class="socials">
+    <a href="https://twitter.com/muhtalipdede" class="socials__item">
+      <i class="fa-brands fa-twitter" />
     </a>
-  </p>
+    <a href="https://medium.com/@muhtalipdede" class="socials__item">
+      <i class="fa-brands fa-medium" />
+    </a>
+    <a href="https://github.com/muhtalipdede" class="socials__item">
+      <i class="fa-brands fa-github" />
+    </a>
+    <a href="https://www.linkedin.com/in/muhtalipdede/" class="socials__item">
+      <i class="fa-brands fa-linkedin" />
+    </a>
+    <a href="https://www.instagram.com/muhtalipdede5/" class="socials__item">
+      <i class="fa-brands fa-instagram" />
+    </a>
+  </div>
 
   <Spacer height={2} />
-
-  <p>
-    You can visit my GitHub Account at
-    <a href="https://github.com/muhtalipdede">
-      https://github.com/muhtalipdede
-    </a>
-  </p>
-
-  <Spacer height={2} />
-
-  <p>
-    You can visit my LinkedIn Account at
-    <a href="https://www.linkedin.com/in/muhtalipdede/">
-      https://www.linkedin.com/in/muhtalipdede/
-    </a>
-  </p>
-
-  <Spacer height={2} />
-
-  <p>
-    You can visit my Twitter Account at
-    <a href="https://twitter.com/muhtalipdede">
-      https://twitter.com/muhtalipdede
-    </a>
-  </p>
-
-  <Spacer height={2} />
-
-  <p>
-    You can visit my Instagram Account at
-    <a href="https://www.instagram.com/muhtalipdede5/">
-      https://www.instagram.com/muhtalipdede5/
-    </a>
-  </p>
-
-  <Spacer height={2} />
-    <iframe
-      src="https://github.com/sponsors/muhtalipdede/card"
-      title="Sponsor muhtalipdede"
-      width="100%"
-      class="home__content__sponsor"
-    />
+  <iframe
+    src="https://github.com/sponsors/muhtalipdede/card"
+    title="Sponsor muhtalipdede"
+    width="100%"
+    class="home__content__sponsor"
+  />
 </div>
 
 <style>
@@ -88,6 +65,18 @@
   .home__content__sponsor {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socials__item {
+    margin: 0 0.5rem;
+    font-size: 2.5rem;
+    color: #000;
   }
 
   @keyframes fadeInDown {

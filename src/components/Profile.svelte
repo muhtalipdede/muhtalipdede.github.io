@@ -10,7 +10,9 @@
 <div class="profile__image__container">
   <!-- svelte-ignore a11y-img-redundant-alt -->
   <!-- svelte-ignore a11y-missing-attribute -->
-  <img class="profile__image" src={photo} />
+  <a href="/">
+    <img class="profile__image" src={photo} />
+  </a>
   <span>Age: {profile.age}</span>
   <span>
     <a href="mailto:{profile.email}">{profile.email}</a>
