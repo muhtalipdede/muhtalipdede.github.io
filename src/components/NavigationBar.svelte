@@ -5,6 +5,9 @@
   <a href="/" class="content__logo">
     <i class="fa-solid fa-house" /> /home
   </a>
+  <a href="/blog" class="content__logo">
+    <i class="fa-solid fa-blog" /> /blog
+  </a>
   <a href="/projects" class="content__logo">
     <i class="fa-solid fa-briefcase" /> /projects
   </a>

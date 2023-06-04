@@ -1,6 +1,7 @@
 <script>
   import Footer from "../components/Footer.svelte";
   import NavigationBar from "../components/NavigationBar.svelte";
+  import "../app.css";
 </script>
 
 <svelte:head>
