@@ -12,6 +12,11 @@
   }
 </script>
 
+<svelte:head>
+  <title>Resume | Muhtalip Dede</title>
+  <meta property="og:title" content="Resume | Muhtalip Dede" />
+</svelte:head>
+
 <div class="download no-print" on:click={() => download()}>
   <i class="fa-solid fa-download" />
 </div>
@@ -41,6 +46,8 @@
     border: 1px solid #000;
     border-radius: 5px;
     padding: 0.5rem 1rem;
+    background-color: #fff;
+    z-index: 999;
   }
 
   @media print {

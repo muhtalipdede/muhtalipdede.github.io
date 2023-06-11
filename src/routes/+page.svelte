@@ -3,6 +3,12 @@
   import Spacer from "../components/Spacer.svelte";
 </script>
 
+<svelte:head>
+  <title>Muhtalip Dede | Software Engineer</title>
+  <meta property="og:title" content="Muhtalip Dede" />
+  <meta property="og:description" content="Software Engineer" />
+</svelte:head>
+
 <div class="home__content">
   <Spacer height={2} />
   <a href="/" class="home__content__logo">

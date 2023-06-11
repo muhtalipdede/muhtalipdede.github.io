@@ -20,7 +20,6 @@ const resume = {
     linkedin: "https://www.linkedin.com/in/muhtalipdede/",
     github: "https://github.com/muhtalipdede",
     medium: "https://muhtalipdede.medium.com/",
-    website: "https://muhtalip.com",
   },
   experiences: [
     {
@@ -276,6 +275,11 @@ const resume = {
   ],
   awards: [
     {
+      name: "Product Hunt - 1. Place of the Day",
+      description: "Datapad",
+      url: "https://www.producthunt.com/products/datapad#datapad-2-0",
+    },
+    {
       name: "Patent",
       description: "S-Fever | Body Temperature Monitoring System",
       url: "https://portal.turkpatent.gov.tr/anonim/arastirma/patent/sonuc/dosya?patentAppNo=2019%2F07825&documentsTpye=all",
@@ -288,17 +292,17 @@ const resume = {
     {
       name: "Gelecege Iz Bırakanlar - 2019",
       description: "Dogus Technology",
-      url: "",
+      url: "/",
     },
     {
       name: "Gelecege Iz Bırakanlar - 2018",
       description: "Dogus Technology",
-      url: "",
+      url: "/",
     },
     {
       name: "2209A - 2018",
       description: "Tubitak",
-      url: "",
+      url: "/",
     },
   ],
   languages: [

@@ -1,6 +1,6 @@
 ---
 title: Linkerd (Service Mesh) — Kubernetes üzerindeki Örümcek Ağları
-description: First post.
+description: Linkerd (Service Mesh) — Kubernetes üzerindeki Örümcek Ağları
 date: '2023-4-14'
 categories:
   - linkerd

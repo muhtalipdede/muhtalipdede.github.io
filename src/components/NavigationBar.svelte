@@ -3,16 +3,19 @@
 
 <div class="navbar__content">
   <a href="/" class="content__logo">
-    <i class="fa-solid fa-house" /> /home
+    <i class="fa-solid fa-house" /> 
   </a>
   <a href="/blog" class="content__logo">
-    <i class="fa-solid fa-blog" /> /blog
+    <i class="fa-solid fa-blog" /> 
   </a>
   <a href="/projects" class="content__logo">
-    <i class="fa-solid fa-briefcase" /> /projects
+    <i class="fa-solid fa-briefcase" /> 
+  </a>
+  <a href="/music" class="content__logo">
+    <i class="fa-brands fa-spotify"></i>
   </a>
   <a href="/about" class="content__logo">
-    <i class="fa-solid fa-user" /> /about
+    <i class="fa-solid fa-user" /> 
   </a>
 </div>
 

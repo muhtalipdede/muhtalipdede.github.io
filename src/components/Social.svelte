@@ -4,24 +4,34 @@
   const social = data.social;
 </script>
 
-<div class="social">
-  <div>
-    <a href={social.twitter}>Twitter</a>
-    <a href={social.linkedin}>LinkedIn</a>
-    <a href={social.github}>GitHub</a>
-    <a href={social.medium}>Medium</a>
-    <a href={social.website}>Website</a>
-  </div>
+<div class="socials">
+    <a href="https://twitter.com/muhtalipdede" class="socials__item">
+      <i class="fa-brands fa-twitter" />
+    </a>
+    <a href="https://medium.com/@muhtalipdede" class="socials__item">
+      <i class="fa-brands fa-medium" />
+    </a>
+    <a href="https://github.com/muhtalipdede" class="socials__item">
+      <i class="fa-brands fa-github" />
+    </a>
+    <a href="https://www.linkedin.com/in/muhtalipdede/" class="socials__item">
+      <i class="fa-brands fa-linkedin" />
+    </a>
+    <a href="https://www.instagram.com/muhtalipdede5/" class="socials__item">
+      <i class="fa-brands fa-instagram" />
+    </a>
 </div>
 
 <style>
-  .social > div > a {
-    align-items: center;
+  .socials {
+    display: flex;
     justify-content: center;
-    font-size: 1rem;
-    font-weight: 300;
+    align-items: center;
+  }
+
+  .socials__item {
+    margin: 0 0.5rem;
+    font-size: 2.5rem;
     color: #000;
-    text-decoration: none;
-    margin: 5px;
   }
 </style>

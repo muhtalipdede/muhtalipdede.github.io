@@ -8,13 +8,14 @@
 
 <style>
     .footer {
-        position: relative;
-        width: 100%;
-        background: #011633;
-        padding: 20px 50px;
+        position: sticky;
+        top: 0;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1rem 2rem;
+        background-color: #011633;
+        border: 1px solid #000;
+        z-index: 1;
     }
 
     .footer p {

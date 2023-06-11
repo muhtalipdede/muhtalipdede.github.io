@@ -12,12 +12,17 @@
     let data: GithubProject[] = [];
     fetchGithubRepos().then((response: GithubProject[]) => {
         data = response
-            .filter((item) => item.fork === false)
+            // .filter((item) => item.fork === false)
             .sort((a, b) => {
                 return b.updated_at - a.updated_at;
             });
     });
 </script>
+
+<svelte:head>
+    <title>Projects</title>
+    <meta property="og:title" content="Projects" />
+</svelte:head>
 
 <div class="projects__container">
     {#each data as item}
@@ -40,6 +45,12 @@
 
             {#if item.watchers_count}
                 <span>Watchers Count: {item.watchers_count}</span>
+            {/if}
+
+            {#if item.fork === false}
+                <span>Fork: No</span>
+            {:else}
+                <span>Fork: Yes</span>
             {/if}
 
             {#if item.forks_count}

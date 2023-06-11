@@ -5,7 +5,11 @@
 </script>
 
 <svelte:head>
-  <title>Muhtalip Dede</title>
+  <meta property="og:title" content="Muhtalip Dede" />
+  <meta name="description" content="Muhtalip Dede's personal website" />
+  <meta property="og:description" content="Muhtalip Dede's personal website" />
+  <meta property="og:url" content="https://muhtalipdede.github.io" />
+  <meta property="og:type" content="website" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 
@@ -42,7 +46,7 @@
 
   @media print {
     .no-print,
-    .no-print * {
+    .no-print {
       display: none !important;
     }
   }

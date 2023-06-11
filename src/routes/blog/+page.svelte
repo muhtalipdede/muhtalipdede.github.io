@@ -1,16 +1,46 @@
 <script lang="ts">
 	import { formatDate } from "$lib/utils";
-
+	import { goto } from "$app/navigation";
+	
 	export let data;
+	let search = "";
+	let initialPosts = data.posts;
+
+	function handleClick(slug: string) {
+		goto(`/blog/${slug}`);
+	}
+
+	function handleSearch() {
+		console.log(search);
+		const filteredPosts = data.posts.filter((post) =>
+			post.title.toLowerCase().includes(search.toLowerCase())
+		);
+		if (search === "") data.posts = initialPosts;
+		else data.posts = filteredPosts;
+	}
 </script>
 
+<svelte:head>
+	<title>Blog</title>
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Blog" />
+</svelte:head>
+
+
+
 <div class="projects__container">
+	<div class="search">
+		<input type="text" placeholder="Search" bind:value={search} on:input={() => handleSearch()} />
+		<i class="fa-solid fa-search"></i>
+	</div>
 	{#each data.posts as post}
 		<div
 			class="projects__container__item"
-			on:click={() => window.open("blog/" + post.slug)}
+			on:click={() => handleClick(post.slug)}
+			on:keypress={() => handleClick(post.slug)}
 		>
 			<h1>{post.title}</h1>
+			<p>{post.description}</p>
 			<p>Published at {formatDate(post.date)}</p>
 			<div class="tags">
 				{#each post.categories as category}
@@ -28,6 +58,25 @@
 		align-items: center;
 		justify-content: center;
 		margin-top: 20px;
+	}
+
+	.search {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.search > input {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+
+	.search > i {
+		margin-left: -30px;
 	}
 
 	.projects__container__item {

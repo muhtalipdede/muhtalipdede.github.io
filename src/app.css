@@ -5,3 +5,7 @@ pre {
     margin-bottom: 20px !important;
     overflow: scroll !important;
 }
+
+img {
+    max-width: 100% !important;
+}

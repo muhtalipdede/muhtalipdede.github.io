@@ -1,6 +1,7 @@
 ---
 title: Kubernetes’te .NET Uygulamalarında Dump Alma ve Memory Leak Analizi
-description: First post.
+description: Kubernetes’te .NET Uygulamalarında Dump Alma ve Memory Leak Analizi Nasıl Yapılır?
+episode: 1
 date: '2023-4-14'
 categories:
   - memory leak
