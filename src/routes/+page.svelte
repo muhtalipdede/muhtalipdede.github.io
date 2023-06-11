@@ -15,10 +15,6 @@
     <img src={photo} alt="Muhtalip Dede" class="home__content__photo" />
   </a>
   <h1>Hi, I'm Muhtalip Dede</h1>
-  <p>
-    I'm a software engineer who is passionate about making open-source more
-    accessible, creating technology to elevate people, and building community.
-  </p>
 
   <Spacer height={2} />
 
@@ -38,6 +34,9 @@
     <a href="https://www.instagram.com/muhtalipdede5/" class="socials__item">
       <i class="fa-brands fa-instagram" />
     </a>
+    <a href="https://open.spotify.com/artist/68ecCED778FRppsxzpn1Gx?si=fDaiWsTmSASUgicEZ2Zmiw" class="socials__item">
+      <i class="fa-brands fa-spotify" />
+    </a>
   </div>
 
   <Spacer height={2} />
@@ -54,11 +53,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .home__content p {
-    margin: 0;
-    text-align: center;
   }
 
   .home__content a {

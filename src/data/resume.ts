@@ -11,7 +11,7 @@ const resume = {
     },
     age: 27,
     aboutme:
-      "I am a software engineer. I have more than 5 years of total experience. I graduated from Yıldız Technical University, Department of Mathematics Engineering in 2018. Lastly, I worked as a Founding Engineer in the founding team of Datapad for about 1 year. I worked as a Senior Software Engineer at Dogus Technology before Datapad. As a technology stack, I work on frontend (eg VueJS), mobile technologies (eg React Native), backend technologies (eg NodeJS, C#, Python etc.) and frequently development operations (Kubernetes, Docker etc.) stacks. All the projects I have worked on so far are cloud-based technologies (eg AWS, GCP, Microsoft Azure, Openshift) and generally these projects are projects with microservice architecture. I have personally been interested in subjects such as open source code, artificial intelligence, image processing, internet of things since I was studying at university.",
+      "I am a software engineer. I have more than 5 years of total experience. I graduated from Yıldız Technical University, Department of Mathematics Engineering in 2018.",
     email: "muhtalipdede@gmail.com",
     phone: "+90 538 8590990",
   },
@@ -31,7 +31,7 @@ const resume = {
     {
       company: "Aldo Green",
       position: "Senior Software Engineer",
-      start: "Dev 2022",
+      start: "Dec 2022",
       end: "Jan 2023",
     },
     {
@@ -43,8 +43,26 @@ const resume = {
     {
       company: "Dogus Technology",
       position: "Senior Software Developer",
-      start: "Jul 2017",
+      start: "Apr 2021",
       end: "Jan 2022",
+    },
+    {
+      company: "Dogus Technology",
+      position: "Software Developer Specialist",
+      start: "Oct 2019",
+      end: "Apr 2021",
+    },
+    {
+      company: "Dogus Technology",
+      position: "Junior Software Developer",
+      start: "Jul 2018",
+      end: "Sep 2019",
+    },
+    {
+      company: "Dogus Technology",
+      position: "Software Development Intern",
+      start: "Jul 2017",
+      end: "Jul 2018",
     },
     {
       company: "Halkbank",

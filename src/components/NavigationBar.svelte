@@ -9,10 +9,13 @@
     <i class="fa-solid fa-blog" /> 
   </a>
   <a href="/projects" class="content__logo">
-    <i class="fa-solid fa-briefcase" /> 
+    <i class="fa-solid fa-code"></i>
   </a>
   <a href="/music" class="content__logo">
     <i class="fa-brands fa-spotify"></i>
+  </a>
+  <a href="/stream" class="content__logo">
+    <i class="fa-brands fa-youtube" />
   </a>
   <a href="/about" class="content__logo">
     <i class="fa-solid fa-user" /> 

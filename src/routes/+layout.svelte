@@ -31,6 +31,7 @@
     flex-direction: column;
     min-height: 100vh;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: -8px;
   }
 
   main {

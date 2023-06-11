@@ -20,6 +20,9 @@
     <a href="https://www.instagram.com/muhtalipdede5/" class="socials__item">
       <i class="fa-brands fa-instagram" />
     </a>
+    <a href="https://open.spotify.com/artist/68ecCED778FRppsxzpn1Gx?si=fDaiWsTmSASUgicEZ2Zmiw" class="socials__item">
+      <i class="fa-brands fa-spotify" />
+    </a>
 </div>
 
 <style>
