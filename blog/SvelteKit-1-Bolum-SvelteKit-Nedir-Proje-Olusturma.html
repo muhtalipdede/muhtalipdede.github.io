@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KL97EWZMLC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-KL97EWZMLC');
+</script>
+
+<head title="%sveltekit.title%">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <script src="https://kit.fontawesome.com/d193e87253.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="../favicon.jpeg" />
+  <meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout.98745dd0.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.8cbbac90.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.ddc6630f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.9f7de2f8.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.bedfed04.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.594af9e5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.e28d822a.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.svelte.fc048b05.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/utils.9a66bb98.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.ts.dde0f9f9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.1827383b.js"><title>SvelteKit 1. Bölüm - SvelteKit Nedir Proje Oluşturma</title><!-- HEAD_svelte-h27r0p_START --><meta property="og:title" content="Muhtalip Dede"><meta name="description" content="Muhtalip Dede's personal website"><meta property="og:description" content="Muhtalip Dede's personal website"><meta property="og:url" content="https://muhtalipdede.github.io"><meta property="og:type" content="website"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- HEAD_svelte-h27r0p_END --><!-- HEAD_svelte-ylbs26_START --><meta property="og:type" content="article"><meta property="og:title" content="SvelteKit 1. Bölüm - SvelteKit Nedir Proje Oluşturma"><!-- HEAD_svelte-ylbs26_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover" >
+  <div style="display: contents">
+
+
+
+
+<div class="app svelte-th9g75"><div class="no-print svelte-th9g75"><div class="navbar__content svelte-b6xvxz"><a href="/" class="content__logo svelte-b6xvxz"><i class="fa-solid fa-house"></i></a>
+  <a href="/blog" class="content__logo svelte-b6xvxz"><i class="fa-solid fa-blog"></i></a>
+  <a href="/projects" class="content__logo svelte-b6xvxz"><i class="fa-solid fa-code"></i></a>
+  <a href="/music" class="content__logo svelte-b6xvxz"><i class="fa-brands fa-spotify"></i></a>
+  <a href="/stream" class="content__logo svelte-b6xvxz"><i class="fa-brands fa-youtube"></i></a>
+  <a href="/about" class="content__logo svelte-b6xvxz"><i class="fa-solid fa-user"></i></a>
+</div></div>
+  <main class="svelte-th9g75">
+
+<article class="svelte-xkvod0"><hgroup><h1 class="svelte-xkvod0">SvelteKit 1. Bölüm - SvelteKit Nedir Proje Oluşturma</h1>
+		<p class="svelte-xkvod0">Published at Jun 10, 2023</p></hgroup>
+
+	<div class="tags svelte-xkvod0"><span class="surface-4 svelte-xkvod0">#svelte</span><span class="surface-4 svelte-xkvod0">#sveltekit</span></div>
+
+	<div class="prose svelte-xkvod0"><p>Herkese Merhabalar,</p>
+<p>Bu yazı serimizde bir Javascript frameworkü olan Svelte için ekstra araçlar sağlayan, gelişim sürecini kolaylaştırmayı amaçlayan ve daha performanslı uygulamalar yapmayı kolaylaştıran SvelteKit’i anlayacağız.</p>
+<p>SvelteKit, React frameworkünü kullananlar için Nextjs’e, Vue frameworkünü kullananlar için Nuxtjs’e benzetilebilir. Svelte framework ile geliştirilecek uygulamalar için birçok özelliği built-in olarak getirmektedir. Bunlara Routing yapısı, Server Side Rendering örnek verilebilir. Bununla birlikte minimum gerekli kodu derlemek için build optimizasyonu yapmak, offline kullanım senaryosu, sayfaların önyüklemesi gibi özellikleri ve geliştirme zamanında Vite’ında desteğiyle birlikte Hot Module Replacement konusunu da ekleyebiliriz. Bu özellikleri serimizde yeri geldikçe detaylıca inceleyeceğiz.</p>
+<h1 id="proje-oluşturma">Proje Oluşturma</h1>
+<p>Bir sveltekit projesi oluşturmak oldukça kolaydır. Eğer bilgisayarınızda NodeJS ortamı bulunuyorsa npm kullanarak kolay bir şekilde bir sveltekit projesi oluşturabiliriz. Bir sveltekit projesi oluşturmak için aşağıdaki adımları izleyelim.</p>
+<!-- HTML_TAG_START --><pre class="shiki material-theme-palenight" style="background-color: #292D3E" tabindex="0"><code><span class="line"><span style="color: #FFCB6B">npm</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">create</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">svelte@latest</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">my-app</span></span>
+<span class="line"><span style="color: #82AAFF">cd</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">my-app</span></span>
+<span class="line"><span style="color: #FFCB6B">npm</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">install</span></span></code></pre><!-- HTML_TAG_END -->
+<p>Bu adımları izledikten sonra bir sveltekit projesi oluşturmuş oluyoruz. Bu adımları izledikten sonra aşağıdaki gibi bir ekranla karşılaşmış oluyoruz. Bu ekranda bir sveltekit projesi oluşturduğumuz için bize birkaç seçenek sunuyor. Bu seçeneklerden birini seçerek devam edebiliriz. Ben bu yazıda template proje olarak demo projesini seçtim. TypeScript desteği için TypeScript projesini seçebilirsiniz. Ek olarak projenizde ESLint ve Prettier desteği için ESLint ve Prettier projesini seçebilirsiniz. Test içinse Playwright projesini seçebilirsiniz. Unit test içinse Vitest projesini seçebilirsiniz.</p>
+<img src="/_app/immutable/assets/create-project.12e529cd.png" alt="Create SvelteKit Project">
+<p>Bu adımları izledikten sonra bir sveltekit projesi oluşturmuş oluyoruz. Bu projeyi çalıştırmak için aşağıdaki komutu çalıştırabiliriz.</p>
+<!-- HTML_TAG_START --><pre class="shiki material-theme-palenight" style="background-color: #292D3E" tabindex="0"><code><span class="line"><span style="color: #FFCB6B">npm</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">run</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">dev</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--open</span></span></code></pre><!-- HTML_TAG_END -->
+<p>Bu komutu çalıştırdıktan sonra aşağıdaki gibi bir ekranla karşılaşmış oluyoruz. Bu ekranda sveltekit projesi çalışmaya başlamış oluyor. Projeyi çalıştırdıktan sonra tarayıcımızda http://localhost:5174 adresine gittiğimizde aşağıdaki gibi bir ekranla karşılaşmış oluyoruz. Bu ekranda sveltekit projesi çalışmaya başlamış oluyor.</p>
+<img src="/_app/immutable/assets/welcome-sveltekit.433dd821.png" alt="Welcome SvelteKit">
+<p>Yazımıza burada son veriyoruz. Bir sonraki yazımızda SvelteKit projemizdeki dosyaları inceleyeceğiz. Bir sonraki yazımızda görüşmek üzere.</p></div>
+</article></main>
+  <div class="no-print svelte-th9g75"><footer class="footer svelte-3cyi00"><p class="svelte-3cyi00">©2023 Muhtalip Dede | All Rights Reserved</p>
+</footer></div>
+</div>
+
+
+			
+			<script>
+				{
+					__sveltekit_9bk7sm = {
+						env: {},
+						base: new URL("..", location).pathname.slice(0, -1),
+						element: document.currentScript.parentElement
+					};
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.ddc6630f.js"),
+						import("../_app/immutable/entry/app.594af9e5.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_9bk7sm.element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>
