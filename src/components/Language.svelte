@@ -8,7 +8,7 @@
 <div class="language">
   <div class="language__item">
     {#each languages as language}
-      <span class="title">{language.name}</span>
+      <span class="title"><i class="fa-solid fa-language"></i>{language.name}</span>
     {/each}
   </div>
 </div>
@@ -36,5 +36,9 @@
     font-weight: 400;
     text-align: justify;
     margin-top: 5px;
+  }
+
+  .language > div > .title > i {
+    margin-right: 5px;
   }
 </style>

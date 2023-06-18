@@ -1,5 +1,5 @@
-// import adapter from '@sveltejs/adapter-vercel'
-import adapter from '@sveltejs/adapter-auto'
+import adapter from '@sveltejs/adapter-static'
+// import adapter from '@sveltejs/adapter-auto'
 import preprocess from "svelte-preprocess";
 import { mdsvex, escapeSvelte } from 'mdsvex'
 import shiki from 'shiki'
@@ -35,10 +35,9 @@ const config = {
 		}),
 		prerender: {
 			entries: [
+				'/blog/SvelteKit-3-Bolum-SvelteKit-Routing-Yapisi',
 				'/blog/SvelteKit-2-Bolum-SvelteKit-Klasor-Yapisi',
 				'/blog/SvelteKit-1-Bolum-SvelteKit-Nedir-Proje-Olusturma',
-				'/blog/Kuberneteste-NET-Uygulamalarinda-Dump-Alma-ve-Memory-Leak-Analizi',
-				'/blog/Linkerd-Service-Mesh-Kubernetes-uzerindeki-Orumcek-Aglari',
 			],
 		},
 	}

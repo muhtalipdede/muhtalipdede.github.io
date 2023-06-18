@@ -8,7 +8,7 @@
 <div class="project">
   <div class="project__container">
     {#each projects as project}
-      <span class="title">{project.name} | {project.company}</span>
+    <span class="title"><i class="fa-solid fa-terminal"></i>{project.name} | {project.company}</span>
       <span class="description">{project.description}</span>
       <div class="stack__container">
         {#each project.stacks as stack}
@@ -43,6 +43,10 @@
     font-weight: 400;
     text-align: justify;
     margin-top: 3rem;
+  }
+
+  .title i {
+    margin-right: 5px;
   }
 
   .description {

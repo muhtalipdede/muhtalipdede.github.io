@@ -44,6 +44,7 @@
     src="https://github.com/sponsors/muhtalipdede/card"
     title="Sponsor muhtalipdede"
     width="100%"
+    height="200px"
     class="home__content__sponsor"
   />
 </div>

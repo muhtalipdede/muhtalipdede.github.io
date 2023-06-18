@@ -327,6 +327,9 @@ const resume = {
     {
       name: "English",
     },
+    {
+      name: "Turkish",
+    },
   ],
 };
 

@@ -9,7 +9,7 @@
 <div class="education">
   <div class="education__item">
     {#each education as item}
-      <span class="title">{item.school} - {item.department}</span>
+      <span class="title"><i class="fa-solid fa-school"></i>{item.school} - {item.department}</span>
       <span class="description">{item.description}</span>
       <span class="date">{item.start} - {item.end}</span>
     {/each}
@@ -41,6 +41,10 @@
     margin-top: 5px;
     text-align: justify;
     margin-top: 1rem;
+  }
+
+  .title i {
+    margin-right: 5px;
   }
 
   .description {

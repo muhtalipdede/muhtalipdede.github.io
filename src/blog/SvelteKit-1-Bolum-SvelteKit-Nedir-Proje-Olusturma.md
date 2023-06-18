@@ -2,6 +2,7 @@
 title: SvelteKit 1. Bölüm - SvelteKit Nedir Proje Oluşturma
 description: SvelteKit nedir? SvelteKit ile nasıl bir proje oluşturulur? SvelteKit ile nasıl bir proje çalıştırılır?
 episode: 1
+image: https://repository-images.githubusercontent.com/398741015/1e5a13a9-35c1-4373-8eeb-0bbeda88a7d8
 date: '2023-06-10'
 categories:
   - svelte
@@ -45,3 +46,6 @@ Bu komutu çalıştırdıktan sonra aşağıdaki gibi bir ekranla karşılaşmı
 <img src={welcomeSvelteKit} alt="Welcome SvelteKit" />
 
 Yazımıza burada son veriyoruz. Bir sonraki yazımızda SvelteKit projemizdeki dosyaları inceleyeceğiz. Bir sonraki yazımızda görüşmek üzere.
+
+Sevgiler,
+Muhtalip Dede

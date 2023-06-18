@@ -2,6 +2,7 @@
 title: SvelteKit 2. Bölüm - SvelteKit Klasör Yapısı
 description: SvelteKit klasör yapısı nasıldır? SvelteKit projesindeki dosyalar nelerdir? SvelteKit projesindeki dosyaların görevleri nelerdir?
 episode: 2
+image: https://repository-images.githubusercontent.com/398741015/1e5a13a9-35c1-4373-8eeb-0bbeda88a7d8
 date: '2023-06-10'
 categories:
   - svelte
@@ -67,3 +68,8 @@ Bu dosyada server tarafında çalışacak hook'ları oluşturabiliriz. Örneğin
 ### service-worker.ts
 
 Bu dosyada projemizin service worker kodlarını yazabiliriz. Bu konuyu service worker konusunda daha detaylı inceleyeceğiz.
+
+Yazımıza burada son veriyoruz. Bir sonraki yazımızda görüşmek üzere.
+
+Sevgiler,
+Muhtalip Dede

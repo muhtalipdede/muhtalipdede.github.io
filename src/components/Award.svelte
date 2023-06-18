@@ -8,7 +8,7 @@
 <div class="award">
   {#each awards as award}
     <div>
-      <a href={award.url}><span>{award.name} | {award.description}</span></a>
+      <i class="fa-solid fa-award"></i><a href={award.url}><span>{award.name} | {award.description}</span></a>
     </div>
   {/each}
 </div>
@@ -28,6 +28,10 @@
 
   .award > div {
     padding: 1rem 0;
+  }
+
+  .award > div > i {
+    margin-right: 5px;
   }
 
   .award > div > a {

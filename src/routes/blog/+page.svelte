@@ -39,6 +39,7 @@
 			on:click={() => handleClick(post.slug)}
 			on:keypress={() => handleClick(post.slug)}
 		>
+			<img src={post.image} alt={post.title} />
 			<h1>{post.title}</h1>
 			<p>{post.description}</p>
 			<p>Published at {formatDate(post.date)}</p>

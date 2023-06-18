@@ -8,7 +8,7 @@
 <div class="experience">
   <div class="experience__item">
     {#each experience as item}
-      <span class="title">{item.company} - {item.position}</span>
+      <span class="title"><i class="fa-solid fa-code-commit"></i>{item.company} - {item.position}</span>
       <span class="date">{item.start} - {item.end}</span>
     {/each}
   </div>
@@ -39,6 +39,11 @@
     margin-top: 5px;
     text-align: justify;
   }
+
+  .experience > div > .title i {
+    margin-right: 5px;
+  }
+  
   .experience > div > .date {
     font-size: 0.9rem;
     font-weight: 300;

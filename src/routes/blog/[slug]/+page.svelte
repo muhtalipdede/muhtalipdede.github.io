@@ -6,6 +6,8 @@
 			title: string;
 			date: string;
 			categories: string[];
+			image: string;
+			description: string;
 		};
 		content: any;
 	};
@@ -15,6 +17,10 @@
 	<title>{data.meta.title}</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.description} />
+	<meta property="og:image" content={data.meta.image} />
+	<meta property="article:author" content="Muhtalip Dede" />
+	<meta property="article:published_time" content={data.meta.date} />
 </svelte:head>
 
 <article>
