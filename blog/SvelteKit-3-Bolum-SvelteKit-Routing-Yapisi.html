@@ -20,18 +20,18 @@
   <link rel="icon" href="../favicon.jpeg" />
   <meta http-equiv="content-security-policy" content="">
 		<link href="../_app/immutable/assets/_layout.98745dd0.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/_page.8cbbac90.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.b31eb7e3.js">
+		<link href="../_app/immutable/assets/_page.51ebae63.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.4e0338a1.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.4df0fa25.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.f8df5a51.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.417d80f5.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/control.e7f5239e.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.5df4d917.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.8cb1130e.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.deffbb71.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.svelte.05d9e27f.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.svelte.16d7d23b.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/utils.9a66bb98.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.ts.25ad2c2f.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page.846d5f8b.js"><title>SvelteKit 3. Bölüm - SvelteKit Routing Yapısı</title><!-- HEAD_svelte-1vmaldw_START --><!-- HEAD_svelte-1vmaldw_END --><!-- HEAD_svelte-v3grb8_START --><meta property="og:type" content="article"><meta property="og:title" content="SvelteKit 3. Bölüm - SvelteKit Routing Yapısı"><meta property="og:description" content="SvelteKit routing yapısı nasıldır? SvelteKit projesindeki routing nasıl yapılır? SvelteKit projesindeki routing yapısı nasıldır?"><meta property="og:image" content="https://repository-images.githubusercontent.com/398741015/1e5a13a9-35c1-4373-8eeb-0bbeda88a7d8"><meta property="article:author" content="Muhtalip Dede"><meta property="article:published_time" content="2023-06-10"><!-- HEAD_svelte-v3grb8_END -->
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.ts.3a3a8654.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.992c9f09.js"><title>SvelteKit 3. Bölüm - SvelteKit Routing Yapısı</title><!-- HEAD_svelte-1vmaldw_START --><!-- HEAD_svelte-1vmaldw_END --><!-- HEAD_svelte-v3grb8_START --><meta property="og:type" content="article"><meta property="og:title" content="SvelteKit 3. Bölüm - SvelteKit Routing Yapısı"><meta property="og:description" content="SvelteKit routing yapısı nasıldır? SvelteKit projesindeki routing nasıl yapılır? SvelteKit projesindeki routing yapısı nasıldır?"><meta property="og:image" content="https://repository-images.githubusercontent.com/398741015/1e5a13a9-35c1-4373-8eeb-0bbeda88a7d8"><meta property="article:author" content="Muhtalip Dede"><meta property="article:published_time" content="2023-06-10"><!-- HEAD_svelte-v3grb8_END -->
 </head>
 
 <body data-sveltekit-preload-data="hover">
@@ -49,12 +49,13 @@
 </div></div>
   <main class="svelte-th9g75">
 
-<article class="svelte-xkvod0"><hgroup><h1 class="svelte-xkvod0">SvelteKit 3. Bölüm - SvelteKit Routing Yapısı</h1>
-		<p class="svelte-xkvod0">Published at Jun 10, 2023</p></hgroup>
+<article class="svelte-11cumu5"><hgroup class="svelte-11cumu5"><h1 class="svelte-11cumu5">SvelteKit 3. Bölüm - SvelteKit Routing Yapısı</h1>
+		<p class="svelte-11cumu5">Published at Jun 10, 2023</p>
+		<img src="https://repository-images.githubusercontent.com/398741015/1e5a13a9-35c1-4373-8eeb-0bbeda88a7d8" alt="SvelteKit 3. Bölüm - SvelteKit Routing Yapısı" class="svelte-11cumu5"></hgroup>
 
-	<div class="tags svelte-xkvod0"><span class="surface-4 svelte-xkvod0">#svelte</span><span class="surface-4 svelte-xkvod0">#sveltekit</span></div>
+	<div class="tags svelte-11cumu5"><span class="surface-4 svelte-11cumu5">#svelte</span><span class="surface-4 svelte-11cumu5">#sveltekit</span></div>
 
-	<div class="prose svelte-xkvod0"><p>Herkese Merhabalar,</p>
+	<div class="prose svelte-11cumu5"><p>Herkese Merhabalar,</p>
 <p>İlk iki bölümde Sveltekit nedir, nasıl proje oluşturulur, bir projenin klasör yapısının nasıl olmalı ve sveltekitteki özel dosyalara dair incelemeler yapmıştık. Bu bölümde ise Sveltekit’te yönlendirmeler için route tanımlamalarına bakacağız.</p>
 <h2 id="sveltekit-routing-yapısı">SvelteKit Routing Yapısı</h2>
 <p>SvelteKit’te route tanımlamaları <code>src/routes</code> klasörü altında yapılır. Bu klasördeki dosyaların isimleri route’ların isimlerini belirler. Örneğin <code>src/routes/index.svelte</code> dosyası <code>http://localhost:5173/</code> adresine gittiğimizde karşımıza çıkan sayfadır. <code>src/routes/about.svelte</code> dosyası <code>localhost:3000/about</code> adresine gittiğimizde karşımıza çıkan sayfadır.</p>
@@ -161,7 +162,7 @@ Muhtalip Dede</p></div>
 			
 			<script>
 				{
-					__sveltekit_1i21b6b = {
+					__sveltekit_vw1309 = {
 						env: {},
 						base: new URL("..", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
@@ -170,10 +171,10 @@ Muhtalip Dede</p></div>
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.b31eb7e3.js"),
-						import("../_app/immutable/entry/app.5df4d917.js")
+						import("../_app/immutable/entry/start.4e0338a1.js"),
+						import("../_app/immutable/entry/app.8cb1130e.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_1i21b6b.element, {
+						kit.start(app, __sveltekit_vw1309.element, {
 							node_ids: [0, 5],
 							data,
 							form: null,

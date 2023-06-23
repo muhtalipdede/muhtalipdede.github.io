@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KL97EWZMLC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-KL97EWZMLC');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4818440885976220" crossorigin="anonymous"></script>
+
+<head title="%sveltekit.title%">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <script src="https://kit.fontawesome.com/d193e87253.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="../favicon.jpeg" />
+  <meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout.98745dd0.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.51ebae63.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.4e0338a1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.4df0fa25.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.417d80f5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.8cb1130e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.deffbb71.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.svelte.16d7d23b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/utils.9a66bb98.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.ts.3a3a8654.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.992c9f09.js"><title>ACID - BASE 1. Bölüm</title><!-- HEAD_svelte-1vmaldw_START --><!-- HEAD_svelte-1vmaldw_END --><!-- HEAD_svelte-v3grb8_START --><meta property="og:type" content="article"><meta property="og:title" content="ACID - BASE 1. Bölüm"><meta property="og:description" content="ACID ve BASE kavramları ile ilgili bilgilerin yer aldığı yazı dizisinin ilk bölümüdür."><meta property="og:image" content="https://images.unsplash.com/photo-1533750204176-3b0d38e9ac1e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGF0YWJhc2VzfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"><meta property="article:author" content="Muhtalip Dede"><meta property="article:published_time" content="2023-06-23"><!-- HEAD_svelte-v3grb8_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+  <div style="display: contents">
+
+
+
+
+<div class="app svelte-th9g75"><div class="no-print svelte-th9g75"><div class="navbar__content svelte-b6xvxz"><a href="/" class="content__logo svelte-b6xvxz"><i class="fa-solid fa-house"></i></a>
+  <a href="/blog" class="content__logo svelte-b6xvxz"><i class="fa-solid fa-blog"></i></a>
+  <a href="/projects" class="content__logo svelte-b6xvxz"><i class="fa-solid fa-code"></i></a>
+  <a href="/music" class="content__logo svelte-b6xvxz"><i class="fa-brands fa-spotify"></i></a>
+  <a href="/stream" class="content__logo svelte-b6xvxz"><i class="fa-brands fa-youtube"></i></a>
+  <a href="/about" class="content__logo svelte-b6xvxz"><i class="fa-solid fa-user"></i></a>
+</div></div>
+  <main class="svelte-th9g75">
+
+<article class="svelte-11cumu5"><hgroup class="svelte-11cumu5"><h1 class="svelte-11cumu5">ACID - BASE 1. Bölüm</h1>
+		<p class="svelte-11cumu5">Published at Jun 23, 2023</p>
+		<img src="https://images.unsplash.com/photo-1533750204176-3b0d38e9ac1e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGF0YWJhc2VzfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="ACID - BASE 1. Bölüm" class="svelte-11cumu5"></hgroup>
+
+	<div class="tags svelte-11cumu5"><span class="surface-4 svelte-11cumu5">#ACID</span><span class="surface-4 svelte-11cumu5">#BASE</span><span class="surface-4 svelte-11cumu5">#database</span><span class="surface-4 svelte-11cumu5">#transaction</span><span class="surface-4 svelte-11cumu5">#transaction management</span></div>
+
+	<div class="prose svelte-11cumu5"><h2 id="acid">ACID</h2>
+<p>ACID, veritabanı işlemlerinin güvenilirliğini sağlamak için kullanılan bir kısaltmadır. ACID kısaltması, Atomicity, Consistency, Isolation, Durability kelimelerinin baş harflerinden oluşur.</p>
+<h3 id="atomicity">Atomicity</h3>
+<p>Atomicity, işlemlerin bölünemezliğini ifade eder. Bir işlemdeki her adımın başarılı olması durumunda işlem başarılı, herhangi bir adımın başarısız olması durumunda ise işlem başarısız olur. Örneğin, bir banka hesabından para çekme işleminde, para çekme işleminin başarılı olması için önce hesapta yeterli miktarda para olması, ardından para çekme işleminin başarılı olması ve son olarak da hesapta kalan miktarın güncellenmesi gerekmektedir. Bu işlemlerin herhangi birinin başarısız olması durumunda işlem başarısız olur ve işlemlerin hiçbiri gerçekleşmez.</p>
+<h3 id="consistency">Consistency</h3>
+<p>Consistency, işlemlerin veritabanı kısıtlarını ihlal etmemesini ifade eder. Örneğin, bir banka hesabından para çekme işleminde, hesapta yeterli miktarda para olmaması durumunda işlem başarısız olur. Bu durumda, hesapta yeterli miktarda para olmaması veritabanı kısıtlarını ihlal ettiği için işlem başarısız olur.</p>
+<h3 id="isolation">Isolation</h3>
+<p>Isolation, işlemlerin birbirinden bağımsız çalışmasını ifade eder. Örneğin, bir banka hesabından para çekme işleminde, hesapta yeterli miktarda para olması durumunda işlem başarılı olur. Bu durumda, hesapta yeterli miktarda para olması işlemin başarılı olması için yeterlidir. Ancak, aynı anda başka bir işlemde hesaba para yatırma işlemi gerçekleşirse, hesapta yeterli miktarda para olması durumunda bile para çekme işlemi başarısız olur. Bu durumda, para çekme işlemi ile para yatırma işlemi birbirinden bağımsız çalışmadığı için para çekme işlemi başarısız olur.</p>
+<h3 id="durability">Durability</h3>
+<p>Durability, işlemlerin kalıcı olmasını ifade eder. Örneğin, bir banka hesabından para çekme işleminde, hesapta yeterli miktarda para olması durumunda işlem başarılı olur. Bu durumda, hesapta yeterli miktarda para olması işlemin başarılı olması için yeterlidir. Ancak, işlem başarılı olmasına rağmen, işlemin kalıcı olmaması durumunda, işlem başarısız olur. Bu durumda, para çekme işlemi başarılı olmasına rağmen, işlem kalıcı olmadığı için başarısız olur.</p>
+<h2 id="base">BASE</h2>
+<p>BASE, veritabanı işlemlerinin güvenilirliğini sağlamak için kullanılan bir kısaltmadır. BASE kısaltması, Basically Available, Soft state, Eventual consistency kelimelerinin baş harflerinden oluşur.</p>
+<h3 id="basically-available">Basically Available</h3>
+<p>Basically Available, işlemlerin her zaman kullanılabilir olmasını ifade eder. Örneğin, bir banka hesabından para çekme işleminde, hesapta yeterli miktarda para olması durumunda işlem başarılı olur. Bu durumda, hesapta yeterli miktarda para olması işlemin başarılı olması için yeterlidir. Ancak, işlem başarılı olmasına rağmen, işlemin kalıcı olmaması durumunda, işlem başarısız olur. Bu durumda, para çekme işlemi başarılı olmasına rağmen, işlem kalıcı olmadığı için başarısız olur.</p>
+<h3 id="soft-state">Soft state</h3>
+<p>Soft state, işlemlerin geçici olarak başarısız olmasını ifade eder. Örneğin, bir banka hesabından para çekme işleminde, hesapta yeterli miktarda para olması durumunda işlem başarılı olur. Bu durumda, hesapta yeterli miktarda para olması işlemin başarılı olması için yeterlidir. Ancak, aynı anda başka bir işlemde hesaba para yatırma işlemi gerçekleşirse, hesapta yeterli miktarda para olması durumunda bile para çekme işlemi başarısız olur. Bu durumda, para çekme işlemi ile para yatırma işlemi birbirinden bağımsız çalışmadığı için para çekme işlemi başarısız olur.</p>
+<h3 id="eventual-consistency">Eventual consistency</h3>
+<p>Eventual consistency, işlemlerin sonunda başarılı olmasını ifade eder. Örneğin, bir banka hesabından para çekme işleminde, hesapta yeterli miktarda para olması durumunda işlem başarılı olur. Bu durumda, hesapta yeterli miktarda para olması işlemin başarılı olması için yeterlidir. Ancak, aynı anda başka bir işlemde hesaba para yatırma işlemi gerçekleşirse, hesapta yeterli miktarda para olması durumunda bile para çekme işlemi başarısız olur. Bu durumda, para çekme işlemi ile para yatırma işlemi birbirinden bağımsız çalışmadığı için para çekme işlemi başarısız olur.</p>
+<h2 id="acid---base-karşılaştırması">ACID - BASE Karşılaştırması</h2>
+<p>ACID ve BASE, veritabanı işlemlerinin güvenilirliğini sağlamak için kullanılan kısaltmalardır. ACID, Atomicity, Consistency, Isolation, Durability kelimelerinin baş harflerinden oluşur. BASE, Basically Available, Soft state, Eventual consistency kelimelerinin baş harflerinden oluşur. ACID, işlemlerin güvenilirliğini sağlamak için kullanılırken, BASE, işlemlerin güvenilirliğini sağlamak için kullanılır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha güvenilirdir. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha karmaşıktır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha yavaştır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha pahalıdır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha az ölçeklenebilirdir.</p>
+<h2 id="acid---base-hangi-durumlarda-kullanılır">ACID - BASE Hangi Durumlarda Kullanılır?</h2>
+<p>ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha güvenilirdir. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha karmaşıktır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha yavaştır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha pahalıdır.</p>
+<p>Bu yazıda ACID ve BASE kısaltmaları hakkında bilgi verdik. Bir sonraki yazıda görüşmek üzere.</p>
+<p>Sevgiler,
+Muhtalip</p></div>
+</article></main>
+  <div class="no-print svelte-th9g75"><footer class="footer svelte-3cyi00"><p class="svelte-3cyi00">©2023 Muhtalip Dede | All Rights Reserved</p>
+</footer></div>
+</div>
+
+
+			
+			<script>
+				{
+					__sveltekit_vw1309 = {
+						env: {},
+						base: new URL("..", location).pathname.slice(0, -1),
+						element: document.currentScript.parentElement
+					};
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.4e0338a1.js"),
+						import("../_app/immutable/entry/app.8cb1130e.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_vw1309.element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>
