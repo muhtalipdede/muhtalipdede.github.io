@@ -49,14 +49,6 @@ Soft state, işlemlerin geçici olarak başarısız olmasını ifade eder. Örne
 
 Eventual consistency, işlemlerin sonunda başarılı olmasını ifade eder. Örneğin, bir banka hesabından para çekme işleminde, hesapta yeterli miktarda para olması durumunda işlem başarılı olur. Bu durumda, hesapta yeterli miktarda para olması işlemin başarılı olması için yeterlidir. Ancak, aynı anda başka bir işlemde hesaba para yatırma işlemi gerçekleşirse, hesapta yeterli miktarda para olması durumunda bile para çekme işlemi başarısız olur. Bu durumda, para çekme işlemi ile para yatırma işlemi birbirinden bağımsız çalışmadığı için para çekme işlemi başarısız olur.
 
-## ACID - BASE Karşılaştırması
-
-ACID ve BASE, veritabanı işlemlerinin güvenilirliğini sağlamak için kullanılan kısaltmalardır. ACID, Atomicity, Consistency, Isolation, Durability kelimelerinin baş harflerinden oluşur. BASE, Basically Available, Soft state, Eventual consistency kelimelerinin baş harflerinden oluşur. ACID, işlemlerin güvenilirliğini sağlamak için kullanılırken, BASE, işlemlerin güvenilirliğini sağlamak için kullanılır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha güvenilirdir. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha karmaşıktır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha yavaştır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha pahalıdır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha az ölçeklenebilirdir.
-
-## ACID - BASE Hangi Durumlarda Kullanılır?
-
-ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha güvenilirdir. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha karmaşıktır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha yavaştır. ACID, işlemlerin güvenilirliğini sağlamak için kullanılan bir kısaltma olduğu için, işlemlerin güvenilirliğini sağlamak için kullanılan BASE kısaltmasına göre daha pahalıdır.
-
 Bu yazıda ACID ve BASE kısaltmaları hakkında bilgi verdik. Bir sonraki yazıda görüşmek üzere.
 
 Sevgiler,
