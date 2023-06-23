@@ -27,6 +27,7 @@
 	<hgroup>
 		<h1>{data.meta.title}</h1>
 		<p>Published at {formatDate(data.meta.date)}</p>
+		<img src={data.meta.image} alt={data.meta.title} />
 	</hgroup>
 
 	<div class="tags">
@@ -43,6 +44,21 @@
 <style>
 	article {
 		max-inline-size: var(--size-content-3);
+	}
+
+	hgroup {
+		margin-top: var(--size-7);
+	}
+
+	hgroup > * {
+		margin-top: var(--size-2);
+	}
+
+	hgroup > img {
+		display: block;
+		max-inline-size: 100%;
+		margin-top: var(--size-7);
+		width: 100%;
 	}
 
 	.prose {

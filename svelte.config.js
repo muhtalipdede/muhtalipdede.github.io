@@ -35,6 +35,7 @@ const config = {
 		}),
 		prerender: {
 			entries: [
+				'/blog/Acid-Base-1-Bolum',
 				'/blog/SvelteKit-3-Bolum-SvelteKit-Routing-Yapisi',
 				'/blog/SvelteKit-2-Bolum-SvelteKit-Klasor-Yapisi',
 				'/blog/SvelteKit-1-Bolum-SvelteKit-Nedir-Proje-Olusturma',

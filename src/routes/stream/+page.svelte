@@ -27,3 +27,9 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen
 />
+
+<svelte:head>
+    <title>Stream</title>
+    <meta name="description" content="Stream" />
+    <meta property="og:title" content="Stream" />
+</svelte:head>

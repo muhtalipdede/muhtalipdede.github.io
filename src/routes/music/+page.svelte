@@ -74,3 +74,10 @@
     loading="lazy"
     title="Elektrozade Dede Efendi"
 />
+
+<svelte:head>
+    <title>Elektrozade Dede Efendi</title>
+    <meta name="description" content="Elektrozade Dede Efendi" />
+    <meta name="keywords" content="Elektrozade Dede Efendi" />
+    <meta name="author" content="Elektrozade Dede Efendi" />
+</svelte:head>

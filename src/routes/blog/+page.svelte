@@ -26,8 +26,6 @@
 	<meta property="og:title" content="Blog" />
 </svelte:head>
 
-
-
 <div class="projects__container">
 	<div class="search">
 		<input type="text" placeholder="Search" bind:value={search} on:input={() => handleSearch()} />
