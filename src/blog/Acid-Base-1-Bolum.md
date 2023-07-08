@@ -9,7 +9,6 @@ categories:
     - BASE
     - database
     - transaction
-    - transaction management
 published: true
 ---
 
