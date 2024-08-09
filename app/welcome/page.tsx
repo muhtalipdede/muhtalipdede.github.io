@@ -27,16 +27,16 @@ export default function Welcome() {
                     It is July 2024 as I start this blog. It is hard to predict what will happen in the world of software, science, technology, and our lives at this point in time. But one thing is certain: the future is coming very fast. The developments we are witnessing today are surpassing even the greatest dreams of the past.
                 </p>
                 <p className="text-justify mb-4">
-                    On one hand, we are watching the incredible progress of science and technology, while on the other, wars are still ongoing in a world that has not even seen a hundred years pass since World War II, and this situation is escalating. I don't know if we, as the millennial generation, will witness a world war, but if we do, it will likely result in far greater destruction than the First and Second World Wars.
+                    On one hand, we are watching the incredible progress of science and technology, while on the other, wars are still ongoing in a world that has not even seen a hundred years pass since World War II, and this situation is escalating. I don&apos;t know if we, as the millennial generation, will witness a world war, but if we do, it will likely result in far greater destruction than the First and Second World Wars.
                 </p>
                 <p className="text-justify mb-4">
                     I hope that science and technology will prevent humanity from self-destruction. However, I cannot be too optimistic about this.
                 </p>
                 <p className="text-justify mb-4">
-                    On the other hand, humanity has started to take serious steps towards multi-planetary living. There are projects to send humans to Mars, return to the Moon, and many other space projects. All these projects are very exciting. I'm sure there will be even greater projects beyond our current imagination.
+                    On the other hand, humanity has started to take serious steps towards multi-planetary living. There are projects to send humans to Mars, return to the Moon, and many other space projects. All these projects are very exciting. I&apos;m sure there will be even greater projects beyond our current imagination.
                 </p>
                 <p className="text-justify mb-4">
-                    We should dream of beautiful things and work to make the future of humanity better. With what I write in this blog, I will not only take note of the present but also share my dreams for the future. That's all for now.
+                    We should dream of beautiful things and work to make the future of humanity better. With what I write in this blog, I will not only take note of the present but also share my dreams for the future. That&apos;s all for now.
                 </p>
                 <p className="text-justify mb-4">
                     Best regards.
