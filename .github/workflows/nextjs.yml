@@ -28,8 +28,6 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      NEXT_OUTPUT_MODE: "export"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
