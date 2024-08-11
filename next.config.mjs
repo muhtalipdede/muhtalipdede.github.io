@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: process.env.NEXT_OUTPUT_MODE,
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         // ignore pages/api folder in NEXT_OUTPUT_MODE=export
         if (process.env.NEXT_OUTPUT_MODE === 'export') {
