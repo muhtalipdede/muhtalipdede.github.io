@@ -6,9 +6,15 @@ export default function Blog() {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch("https://muhtalipdede-github-io.vercel.app/api/posts");
-            const data = await response.json();
-            setPosts(data);
+            try {
+                const response = await fetch("https://muhtalipdede-github-io.vercel.app/api/posts", {
+                    mode: "no-cors"
+                });
+                const data = await response.json();
+                setPosts(data);
+            } catch (error) {
+                console.error(error);
+            }
         };
 
         fetchPosts();
