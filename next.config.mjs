@@ -5,9 +5,11 @@ const nextConfig = {
         if (process.env.NEXT_OUTPUT_MODE !== "export" || !config.module) {
             return config;
         }
-        config.module.rules?.push({
-            test: /src\/app\/api/,
-            loader: "ignore-loader",
+
+        // ignore api folder in export mode to prevent next.js from trying to bundle it
+        config.module.rules.push({
+            test: /api/,
+            use: "null-loader",
         });
         return config;
     },
