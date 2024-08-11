@@ -1,5 +1,6 @@
 "use client";
 import { Post } from "@/types/post";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Blog() {
@@ -31,16 +32,18 @@ export default function Blog() {
     );
 
     const BlogPost = ({ post }: { post: any }) => (
-        <article className="mb-4 p-4 bg-gray-100 rounded-lg">
-            <h2 className="text-2xl font-bold text-gray-900 mt-4">{post.title}</h2>
-            <p className="text-gray-600 mt-2">By {post.author} on {new Date(post.date).toLocaleDateString()}</p>
-            <p className="text-gray-800 mt-2">{post.body}</p>
-            <div className="flex flex-wrap mt-4">
-                {post.tags.map((tag: string) => (
-                    <span key={tag} className="bg-gray-200 text-gray-800 rounded-full px-2 py-1 text-sm mr-2 mb-2">{tag}</span>
-                ))}
-            </div>
-        </article>
+        <Link href={`/blog/${post.shortLink}`}>
+            <article className="mb-4 p-4 bg-gray-100 rounded-lg">
+                <h2 className="text-2xl font-bold text-gray-900 mt-4">{post.title}</h2>
+                <p className="text-gray-600 mt-2">By {post.author} on {new Date(post.date).toLocaleDateString()}</p>
+                <p className="text-gray-800 mt-2">{post.body}</p>
+                <div className="flex flex-wrap mt-4">
+                    {post.tags.map((tag: string) => (
+                        <span key={tag} className="bg-gray-200 text-gray-800 rounded-full px-2 py-1 text-sm mr-2 mb-2">{tag}</span>
+                    ))}
+                </div>
+            </article>
+        </Link>
     );
     return (
         <main className="flex flex-col justify-center min-h-screen max-w-3xl mx-auto p-4">

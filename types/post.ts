@@ -6,4 +6,5 @@ export type Post = {
     date: string;
     tags: string[];
     comments: string[];
+    shortLink: string;
 }

@@ -9,7 +9,8 @@ export function GET(request: Request) {
             author: "Muhtalip Dede",
             date: "2024-07-01",
             tags: ["software", "technology"],
-            comments: []
+            comments: [],
+            shortLink: "hello-world"
         } as Post,
         {
             id: 2,
@@ -18,7 +19,8 @@ export function GET(request: Request) {
             author: "Muhtalip Dede",
             date: "2024-07-02",
             tags: ["software", "technology"],
-            comments: []
+            comments: [],
+            shortLink: "hello-world-2"
         } as Post,
     ]), {
         headers: {
