@@ -35,12 +35,6 @@ export default function NovaSimulation() {
     let angle = 0;
     const angularSpeed = 0.008; // radians per frame
 
-    // Yıldız izleri için geçmiş pozisyonları tutan diziler (tür tanımı ile closure dışında tanımlanmalı)
-    type TrailPoint = { x: number; y: number };
-    const redGiantTrail: TrailPoint[] = [];
-    const whiteDwarfTrail: TrailPoint[] = [];
-    const maxTrailLength = 60; // iz uzunluğu (frame cinsinden)
-
     function drawSystem() {
       const c = canvasRef.current;
       if (!ctx || !c) return;
@@ -62,40 +56,6 @@ export default function NovaSimulation() {
         r: whiteDwarfR(),
         color: "#b3e6ff" // açık buz mavisi
       };
-
-      // --- Yıldız izlerini güncelle ve çiz ---
-      redGiantTrail.push({ x: redGiant.x, y: redGiant.y });
-      whiteDwarfTrail.push({ x: whiteDwarf.x, y: whiteDwarf.y });
-      if (redGiantTrail.length > maxTrailLength) redGiantTrail.shift();
-      if (whiteDwarfTrail.length > maxTrailLength) whiteDwarfTrail.shift();
-      // Red giant trail
-      for (let i = 0; i < redGiantTrail.length - 1; i++) {
-        const t = i / (redGiantTrail.length - 1);
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(redGiantTrail[i].x, redGiantTrail[i].y);
-        ctx.lineTo(redGiantTrail[i + 1].x, redGiantTrail[i + 1].y);
-        ctx.strokeStyle = `rgba(255,51,51,${0.18 * (1 - t)})`;
-        ctx.lineWidth = 18 * (1 - t) + 2;
-        ctx.shadowColor = '#ff3333';
-        ctx.shadowBlur = 16 * (1 - t);
-        ctx.stroke();
-        ctx.restore();
-      }
-      // White dwarf trail
-      for (let i = 0; i < whiteDwarfTrail.length - 1; i++) {
-        const t = i / (whiteDwarfTrail.length - 1);
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(whiteDwarfTrail[i].x, whiteDwarfTrail[i].y);
-        ctx.lineTo(whiteDwarfTrail[i + 1].x, whiteDwarfTrail[i + 1].y);
-        ctx.strokeStyle = `rgba(179,230,255,${0.13 * (1 - t)})`;
-        ctx.lineWidth = 12 * (1 - t) + 2;
-        ctx.shadowColor = '#b3e6ff';
-        ctx.shadowBlur = 12 * (1 - t);
-        ctx.stroke();
-        ctx.restore();
-      }
 
       // Draw red giant
       ctx.beginPath();
@@ -144,12 +104,13 @@ export default function NovaSimulation() {
       const planetCountWD = 2;
       const planetOrbitsWD = [whiteDwarf.r * 4.5, whiteDwarf.r * 7.2];
       const planetSpeedsWD = [1.7, 0.95];
+      // Gezegenlerin çakışmaması için açısal fazları birbirinden uzaklaştır
+      const phaseOffsetWD = Math.PI / planetCountWD;
       for (let i = 0; i < planetCountWD; i++) {
-        const planetAngle = angle * planetSpeedsWD[i] + i * (2 * Math.PI / planetCountWD);
+        const planetAngle = angle * planetSpeedsWD[i] + i * (2 * Math.PI / planetCountWD) + i * phaseOffsetWD;
         const planetOrbit = planetOrbitsWD[i];
         const px = whiteDwarf.x + planetOrbit * Math.cos(planetAngle);
         const py = whiteDwarf.y + planetOrbit * Math.sin(planetAngle);
-        // Yıldıza yakın küçük, uzak büyük gezegen
         const planetRadius = 8 + 7 * (i / (planetCountWD - 1 || 1));
         ctx.save();
         ctx.beginPath();
@@ -164,12 +125,13 @@ export default function NovaSimulation() {
       const planetCountRG = 5;
       const planetOrbits = [redGiant.r * 1.7, redGiant.r * 2.3, redGiant.r * 3.1, redGiant.r * 4.2, redGiant.r * 5.1];
       const planetSpeeds = [0.5, 0.32, 0.18, 0.13, 0.08];
+      // Gezegenlerin çakışmaması için açısal fazları birbirinden uzaklaştır
+      const phaseOffsetRG = Math.PI / planetCountRG;
       for (let i = 0; i < planetCountRG; i++) {
-        const planetAngle = angle * planetSpeeds[i] + i * (2 * Math.PI / planetCountRG);
+        const planetAngle = angle * planetSpeeds[i] + i * (2 * Math.PI / planetCountRG) + i * phaseOffsetRG;
         const planetOrbit = planetOrbits[i];
         const px = redGiant.x + planetOrbit * Math.cos(planetAngle);
         const py = redGiant.y + planetOrbit * Math.sin(planetAngle);
-        // Yıldıza yakın küçük, uzak büyük gezegen
         const planetRadius = 9 + 8 * (i / (planetCountRG - 1));
         let planetColor = '#ffb347';
         if (i === 1) planetColor = '#6ec6ff';
@@ -216,11 +178,7 @@ export default function NovaSimulation() {
 
   return (
     <div style={{ textAlign: "center", width: "100vw", height: "100vh", overflow: "hidden", background: "#111" }}>
-      <h2 style={{ color: '#fff', position: 'absolute', left: 0, right: 0, top: 24, zIndex: 2 }}>Nova Patlaması Simülasyonu</h2>
       <canvas ref={canvasRef} style={{ position: "fixed", left: 0, top: 0, width: "100vw", height: "100vh", zIndex: 1, display: 'block' }} />
-      <div style={{ color: '#fff', position: 'absolute', left: 0, right: 0, bottom: 24, zIndex: 2 }}>
-        Kırmızı dev yıldızdan beyaz cüceye madde akışı ve periyodik nova patlaması.
-      </div>
     </div>
   );
 }
