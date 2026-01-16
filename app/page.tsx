@@ -77,7 +77,7 @@ export default function Home() {
                 
                 <p className="text-gray-300 text-lg leading-relaxed max-w-3xl">
                   My deep-rooted interest in mathematics and computing has driven me to pursue a career in software engineering. 
-                  Over the past 8 years, I've gained hands-on experience across various industries, including vehicle finance, 
+                  Over the past 8 years, I&#39;ve gained hands-on experience across various industries, including vehicle finance, 
                   SaaS, IoT, and Tourism, building scalable systems and leading innovative projects.
                 </p>
                 
@@ -576,7 +576,7 @@ export default function Home() {
                 <div className="flex items-center gap-4">
                   <YTULogo />
                   <div>
-                    <h3 className="text-2xl font-semibold text-white mb-2">Bachelor's Degree</h3>
+                    <h3 className="text-2xl font-semibold text-white mb-2">Bachelor&#39;s Degree</h3>
                     <p className="text-green-400 font-medium text-lg">Mathematical Engineering</p>
                     <p className="text-purple-400 font-medium">Yıldız Technical University</p>
                   </div>
@@ -768,7 +768,7 @@ export default function Home() {
                 Google Gemini API Structured Output
               </h3>
               <p className="text-gray-300 text-sm mb-4">
-                LLM'lerin daha dinamik ve güvenilir şekilde kullanımı
+                LLM&#39;lerin daha dinamik ve güvenilir şekilde kullanımı
               </p>
               <a href="https://medium.com/@muhtalipdede/google-gemini-api-structured-output-i%CC%87le-bir-llm-nas%C4%B1l-daha-dinamik-ve-g%C3%BCvenilir-bir-%C5%9Fekilde-c7bdc76618f1" 
                  target="_blank" rel="noopener noreferrer"
@@ -999,10 +999,10 @@ export default function Home() {
       <footer className="relative bg-black/40 backdrop-blur-sm border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-white mb-4">Let's Build Something Amazing Together</h3>
+            <h3 className="text-3xl font-bold text-white mb-4">Let&#39;s Build Something Amazing Together</h3>
             <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-              I'm always excited to discuss new opportunities, innovative projects, and cutting-edge technologies. 
-              Let's connect and create the future of software engineering.
+              I&#39;m always excited to discuss new opportunities, innovative projects, and cutting-edge technologies. 
+              Let&#39;s connect and create the future of software engineering.
             </p>
             
             <div className="flex flex-wrap gap-6 justify-center mb-12">
@@ -1040,7 +1040,7 @@ export default function Home() {
                 © 2026 Muhtalip Dede. Crafted with passion for technology and innovation.
               </p>
               <p className="text-gray-300 text-sm mt-4 max-w-4xl mx-auto italic leading-relaxed">
-                "Imagination is more important than knowledge. For knowledge is limited to all we now know and understand, while imagination embraces the entire world, and all there ever will be to know and understand."
+                &quot;Imagination is more important than knowledge. For knowledge is limited to all we now know and understand, while imagination embraces the entire world, and all there ever will be to know and understand.&quot;
               </p>
               <p className="text-gray-500 text-xs mt-2">
                 - Albert Einstein
