@@ -1,0 +1,16 @@
+---
+description: Hosted Play privacy pages and apps hub
+globs: "{public/apps/**,app/apps/**}"
+alwaysApply: false
+---
+
+# Apps hub and privacy HTML
+
+Privacy files under `public/apps/` are what Play Console links. Keep package IDs in sync with the mobile apps:
+
+- Walk → `com.muhtalipdede.walk`
+- Quran Companion → `com.muhtalipdede.qurancompanion`
+
+Contact on those pages: `muhtalipdede@gmail.com`. No `com.sftech.*`.
+
+Edits are not live until pushed to `main` on this repo. Prefer static HTML in `public/` for policies (Play fetches the URL, not the Next app).
