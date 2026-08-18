@@ -14,6 +14,12 @@ const PLAY_DEV =
 
 const APPS = [
   {
+    name: "Brain Dump",
+    status: "Coming soon",
+    blurb: "Empty your mind. We’ll help you make sense of it.",
+    privacy: "/apps/brain-dump/privacy.html",
+  },
+  {
     name: "Walk",
     status: "Coming soon",
     blurb: "Turn everyday steps into journeys, streaks, and simple goals.",
