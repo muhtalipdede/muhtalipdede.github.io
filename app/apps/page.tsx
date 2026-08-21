@@ -14,6 +14,12 @@ const PLAY_DEV =
 
 const APPS = [
   {
+    name: "Don't Blink",
+    status: "Coming soon",
+    blurb: "It's easy. Until the game starts lying to you.",
+    privacy: "/apps/dont-blink/privacy.html",
+  },
+  {
     name: "Brain Dump",
     status: "Coming soon",
     blurb: "Empty your mind. We’ll help you make sense of it.",
