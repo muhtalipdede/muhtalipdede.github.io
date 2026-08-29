@@ -14,6 +14,12 @@ const PLAY_DEV =
 
 const APPS = [
   {
+    name: "Merge Colors",
+    status: "Coming soon",
+    blurb: "Swipe same colors to merge — no numbers, only color.",
+    privacy: "/apps/merge-colors/privacy.html",
+  },
+  {
     name: "Don't Blink",
     status: "Coming soon",
     blurb: "It's easy. Until the game starts lying to you.",

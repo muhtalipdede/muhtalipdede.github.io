@@ -7,6 +7,7 @@ Personal site and **hosted Play privacy policies**. Live: https://muhtalipdede.g
 | Walk | `public/apps/walk/privacy.html` | `com.muhtalipdede.walk` |
 | Quran Companion | `public/apps/quran-companion/privacy.html` | `com.muhtalipdede.qurancompanion` |
 | Don't Blink | `public/apps/dont-blink/privacy.html` | `com.muhtalipdede.dontblink` |
+| Merge Colors | `public/apps/merge-colors/privacy.html` | `com.muhtalipdede.mergecolors` |
 
 Apps index: `app/apps/page.tsx` → https://muhtalipdede.github.io/apps
 
