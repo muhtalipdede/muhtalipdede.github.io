@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brain Dump Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.5;
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    h1, h2 { line-height: 1.25; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #8884; padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
+    .meta { opacity: 0.8; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <h1>Brain Dump Privacy Policy</h1>
+  <p class="meta"><strong>Effective date:</strong> 18 August 2026<br />
+  <strong>App:</strong> Brain Dump (<code>com.muhtalipdede.braindump</code>)<br />
+  <strong>Contact:</strong> muhtalipdede@gmail.com</p>
+
+  <p>This policy describes how Brain Dump handles information on your device. The app is local-first. It does <strong>not</strong> create accounts and does <strong>not</strong> run a Brain Dump backend that receives your thoughts in this version.</p>
+
+  <h2>1. Summary</h2>
+  <table>
+    <tr><th>Topic</th><th>Practice</th></tr>
+    <tr><td>Accounts</td><td>None</td></tr>
+    <tr><td>Backend / cloud sync</td><td>None (MVP)</td></tr>
+    <tr><td>Where data is stored</td><td>On your device (Android app sandbox; Room + DataStore). Android backup is disabled for this app.</td></tr>
+    <tr><td>AI organization</td><td>On-device heuristic parser. Dump text is <strong>not</strong> sent to a third-party model in this version.</td></tr>
+    <tr><td>Analytics / ads / crash SDKs</td><td>None</td></tr>
+    <tr><td>Sale of personal data</td><td>No</td></tr>
+  </table>
+
+  <h2>2. Information the app processes</h2>
+  <h3>2.1 Thoughts you capture</h3>
+  <p>Free-form text (and optional speech-to-text transcripts from the system recognizer) that you enter. Stored locally as brain dumps and extracted items (titles, optional dates/times you provided, types, notes).</p>
+  <h3>2.2 Optional profile</h3>
+  <p>Display name, language preference, and notification toggles. Stored on-device.</p>
+  <h3>2.3 Notifications</h3>
+  <p>If you enable them, the app schedules local reminders for items you confirmed with a time, plus optional morning/evening check-ins. Notification permission may be requested on Android 13+.</p>
+  <h3>2.4 Voice</h3>
+  <p>Microphone access is handled by the system speech recognizer when you tap the mic. Brain Dump does not upload raw audio to a Brain Dump server.</p>
+
+  <h2>3. How information is used</h2>
+  <p>Only to capture thoughts, organize them into actions, show Today/Inbox lists, search locally, and fire optional local notifications. No advertising. No sale of data.</p>
+  <p>AI-assisted organization is labeled in the review step. You confirm items before they become lasting actions. The parser must not invent times you did not write.</p>
+
+  <h2>4. Third parties</h2>
+  <p><strong>None for dump text in MVP.</strong> There is no cloud AI provider compiled into the Play build. If a future version sends text to a model, this policy and Play Data Safety will be updated first, and the in-app privacy note will say so.</p>
+  <p><strong>Google Play</strong> distributes the app. The system speech recognizer (if used) is provided by the device/OS vendor under their terms.</p>
+
+  <h2>5. Retention and deletion</h2>
+  <ol>
+    <li>Profile → <strong>Clear thoughts on this device</strong> deletes local dumps and items.</li>
+    <li>Clear app storage or uninstall to remove remaining data.</li>
+  </ol>
+  <p><strong>Account deletion:</strong> Not applicable — Brain Dump has no accounts.</p>
+
+  <h2>6. Children</h2>
+  <p>Brain Dump is not directed at children under 13 (or the equivalent minimum age in your country).</p>
+
+  <h2>7. International / transfers</h2>
+  <p>MVP processing is on-device. Brain Dump does not transfer your dumps to a Brain Dump cloud service.</p>
+
+  <h2>8. Changes</h2>
+  <p>Updates to this policy will change the effective date and, when required, the Play listing and in-app disclosure.</p>
+</body>
+</html>
