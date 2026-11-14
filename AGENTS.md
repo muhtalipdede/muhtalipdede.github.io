@@ -9,6 +9,7 @@ Personal site and **hosted Play privacy policies**. Live: https://muhtalipdede.g
 | Don't Blink | `public/apps/dont-blink/privacy.html` | `com.muhtalipdede.dontblink` |
 | Merge Colors | `public/apps/merge-colors/privacy.html` | `com.muhtalipdede.mergecolors` |
 | Cargo Jam | `public/apps/cargo-jam/privacy.html` | `com.muhtalipdede.cargojam` |
+| Harbor Stack | `public/apps/harbor-stack/privacy.html` | `com.muhtalipdede.harborstack` |
 
 Apps index: `app/apps/page.tsx` → https://muhtalipdede.github.io/apps
 
