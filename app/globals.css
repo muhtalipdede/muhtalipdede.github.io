@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --paper: #faf8f4;
+  --ink: #1c1917;
+  --muted: #57534e;
+  --line: #d6d0c6;
+  --accent: #1d4e6b;
+  --accent-soft: #e8f0f5;
+  --surface: #fffefb;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -10,60 +20,82 @@
   }
 
   body {
-    @apply bg-zinc-950 text-zinc-100;
+    background-color: var(--paper);
+    color: var(--ink);
   }
 
   :focus-visible {
-    outline: 2px solid #34d399;
-    outline-offset: 2px;
-    border-radius: 4px;
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
   }
 
   ::selection {
-    background-color: rgba(52, 211, 153, 0.25);
-    color: #fff;
+    background-color: var(--accent-soft);
+    color: var(--ink);
   }
 }
 
 @layer components {
   .skip-link {
-    @apply absolute -top-10 left-4 z-[100] bg-emerald-600 text-white px-4 py-2 rounded-b-lg transition-all duration-200;
+    @apply absolute -top-10 left-4 z-[100] px-4 py-2 text-white transition-all duration-200;
+    background-color: var(--accent);
   }
   .skip-link:focus {
     @apply top-0;
   }
 
-  /* Shared card style */
-  .card {
-    @apply bg-zinc-900 border border-zinc-800 rounded-2xl transition-all duration-300;
-  }
-  .card:hover {
-    @apply border-zinc-700 bg-zinc-900/80;
+  .site-shell {
+    background-color: var(--paper);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
   }
 
-  /* Accent underline on headings */
+  .masthead {
+    border-bottom: 3px double var(--line);
+  }
+
   .section-title {
-    @apply text-3xl sm:text-4xl font-bold text-zinc-50 tracking-tight;
+    @apply font-display text-2xl sm:text-3xl text-[var(--ink)];
+    font-weight: 600;
+    letter-spacing: -0.01em;
   }
 
-  /* Pill / tag */
-  .pill {
-    @apply text-xs font-medium px-2.5 py-1 rounded-full border;
+  .section-kicker {
+    @apply text-xs uppercase tracking-[0.14em] text-[var(--muted)];
   }
-}
 
-@layer utilities {
-  .animation-delay-200 {
-    animation-delay: 200ms;
+  .link-accent {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
   }
-  .animation-delay-400 {
-    animation-delay: 400ms;
+  .link-accent:hover {
+    text-decoration-thickness: 2px;
   }
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+  .chip {
+    @apply inline-flex items-center text-xs px-2 py-0.5 text-[var(--muted)];
+    border: 1px solid var(--line);
+    background: var(--surface);
   }
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
+
+  .portrait {
+    border: 1px solid var(--line);
+    box-shadow: 3px 3px 0 var(--line);
+    background: var(--surface);
+  }
+
+  .page-frame {
+    @apply mx-auto w-full max-w-none px-4 sm:px-6 md:px-8 lg:px-10;
+  }
+
+  .sidebar-rail {
+    border-color: var(--line);
+  }
+
+  @media (min-width: 1024px) {
+    .sidebar-rail {
+      border-right-width: 1px;
+    }
   }
 }

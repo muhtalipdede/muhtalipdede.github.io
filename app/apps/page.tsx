@@ -1,120 +1,153 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeftIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export const metadata: Metadata = {
   title: "Apps",
   description:
-    "Android apps by Muhtalip Dede. Independent software engineer shipping mobile products on Google Play.",
+    "iOS and Android apps by Muhtalip Dede. Independent software engineer shipping on the App Store and Google Play.",
   alternates: { canonical: "https://muhtalipdede.github.io/apps" },
 };
 
 const PLAY_DEV =
   "https://play.google.com/store/apps/dev?id=6862159926694466208";
+const APP_STORE_DEV =
+  "https://apps.apple.com/developer/muhtalip-dede/id1583166446";
 
 const APPS = [
   {
-    name: "Merge Colors",
-    status: "Coming soon",
+    name: "Don't Blink",
+    blurb: "Tap / don't tap reaction game.",
+    privacy: "/apps/dont-blink/privacy.html",
+    store: "https://apps.apple.com/app/dont-blink-tap-dont-tap/id6805209467",
+    play: "https://play.google.com/store/apps/details?id=com.muhtalipdede.dontblink",
+  },
+  {
+    name: "Swipe Merge Colors",
     blurb: "Swipe same colors to merge — no numbers, only color.",
     privacy: "/apps/merge-colors/privacy.html",
+    store: "https://apps.apple.com/app/swipe-merge-colors/id6806599894",
+    play: "https://play.google.com/store/apps/details?id=com.muhtalipdede.mergecolors",
   },
   {
-    name: "Don't Blink",
-    status: "Coming soon",
-    blurb: "It's easy. Until the game starts lying to you.",
-    privacy: "/apps/dont-blink/privacy.html",
-  },
-  {
-    name: "Brain Dump",
-    status: "Coming soon",
-    blurb: "Empty your mind. We’ll help you make sense of it.",
-    privacy: "/apps/brain-dump/privacy.html",
+    name: "Cargo Jam",
+    blurb: "Logistics truck puzzle.",
+    privacy: "/apps/cargo-jam/privacy.html",
+    play: "https://play.google.com/store/apps/details?id=com.muhtalipdede.cargojam",
   },
   {
     name: "Walk",
-    status: "Coming soon",
     blurb: "Turn everyday steps into journeys, streaks, and simple goals.",
     privacy: "/apps/walk/privacy.html",
+    play: "https://play.google.com/store/apps/details?id=com.muhtalipdede.walk",
   },
   {
     name: "Quran Companion",
-    status: "Coming soon",
     blurb: "A calm, private way to read and listen to the Quran every day.",
     privacy: "/apps/quran-companion/privacy.html",
+  },
+  {
+    name: "Harbor Stack",
+    blurb: "Harbor cargo stacking puzzle.",
+    privacy: "/apps/harbor-stack/privacy.html",
+  },
+  {
+    name: "Brain Dump",
+    blurb: "Empty your mind. We'll help you make sense of it.",
+    privacy: "/apps/brain-dump/privacy.html",
+  },
+  {
+    name: "My Body",
+    blurb: "Personal body tracking, private on device.",
+    privacy: "/apps/my-body/privacy.html",
+  },
+  {
+    name: "Lane Lift",
+    blurb: "Lane-based puzzle game.",
+    privacy: "/apps/lane-lift/privacy.html",
   },
 ] as const;
 
 export default function AppsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
-      <header className="border-b border-white/10 bg-slate-900/80 backdrop-blur-lg">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm text-gray-300 hover:text-white"
-          >
-            <ArrowLeftIcon className="w-4 h-4" />
-            Muhtalip Dede
-          </Link>
-          <a
-            href={PLAY_DEV}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-blue-300 hover:text-blue-200"
-          >
-            Google Play
-          </a>
+    <div className="site-shell min-h-screen">
+      <header className="masthead w-full">
+        <div className="page-frame flex flex-col gap-4 py-6 sm:flex-row sm:items-end sm:justify-between sm:py-8">
+          <div>
+            <Link href="/" className="font-sans text-sm text-muted hover:text-accent">
+              ← Muhtalip Dede
+            </Link>
+            <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl lg:text-5xl">Apps</h1>
+            <p className="mt-2 max-w-xl text-muted">
+              Independent iOS &amp; Android apps. Support:{" "}
+              <a href="mailto:muhtalipdede@gmail.com" className="link-accent">
+                muhtalipdede@gmail.com
+              </a>
+            </p>
+          </div>
+          <p className="font-sans text-sm text-muted sm:text-right">
+            <a
+              href={APP_STORE_DEV}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent"
+            >
+              App Store
+            </a>
+            <span className="mx-2 text-line">·</span>
+            <a href={PLAY_DEV} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
+              Google Play
+            </a>
+          </p>
         </div>
       </header>
 
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-        <p className="text-blue-300 text-sm font-medium mb-3">Google Play developer</p>
-        <h1 className="text-3xl sm:text-4xl font-bold mb-4">Apps</h1>
-        <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-10">
-          Independent software engineer. I build and ship mobile apps across different
-          categories. Support:{" "}
-          <a href="mailto:muhtalipdede@gmail.com" className="text-blue-300 hover:text-blue-200">
-            muhtalipdede@gmail.com
-          </a>
-        </p>
-
-        <ul className="space-y-4 mb-12">
+      <main className="page-frame py-10 sm:py-14">
+        <ul className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {APPS.map((app) => (
-            <li
-              key={app.name}
-              className="bg-white/10 border border-white/10 rounded-2xl p-6"
-            >
-              <div className="flex items-start justify-between gap-3 mb-2">
-                <h2 className="text-xl font-semibold">{app.name}</h2>
-                <span className="text-xs bg-blue-500/20 text-blue-300 px-2 py-1 rounded-full whitespace-nowrap">
-                  {app.status}
-                </span>
+            <li key={app.name} className="border border-line bg-surface/50 p-6">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h2 className="font-display text-xl text-ink">{app.name}</h2>
+                {"store" in app || "play" in app ? (
+                  <span className="font-sans text-xs text-accent">Live</span>
+                ) : (
+                  <span className="font-sans text-xs text-muted">Coming soon</span>
+                )}
               </div>
-              <p className="text-gray-300 text-sm mb-4">{app.blurb}</p>
-              <a
-                href={app.privacy}
-                className="text-sm text-blue-300 hover:text-blue-200"
-              >
-                Privacy Policy
-              </a>
+              <p className="mt-3 text-muted">{app.blurb}</p>
+              <p className="mt-4 font-sans text-sm">
+                {"store" in app && app.store && (
+                  <>
+                    <a
+                      href={app.store}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-accent"
+                    >
+                      App Store
+                    </a>
+                    <span className="mx-2 text-line">·</span>
+                  </>
+                )}
+                {"play" in app && app.play && (
+                  <>
+                    <a
+                      href={app.play}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-accent"
+                    >
+                      Google Play
+                    </a>
+                    <span className="mx-2 text-line">·</span>
+                  </>
+                )}
+                <a href={app.privacy} className="text-muted hover:text-accent">
+                  Privacy Policy
+                </a>
+              </p>
             </li>
           ))}
         </ul>
-
-        <p className="text-gray-400 text-sm flex items-center gap-2">
-          <EnvelopeIcon className="w-4 h-4" />
-          App-specific listings go live on{" "}
-          <a
-            href={PLAY_DEV}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-300 hover:text-blue-200"
-          >
-            the Play developer page
-          </a>
-          .
-        </p>
       </main>
     </div>
   );
