@@ -53,6 +53,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Muhtalip Dede", url: siteUrl }],
   creator: "Muhtalip Dede",
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
