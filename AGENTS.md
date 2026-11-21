@@ -10,6 +10,7 @@ Personal site and **hosted Play privacy policies**. Live: https://muhtalipdede.g
 | Merge Colors | `public/apps/merge-colors/privacy.html` | `com.muhtalipdede.mergecolors` |
 | Cargo Jam | `public/apps/cargo-jam/privacy.html` | `com.muhtalipdede.cargojam` |
 | Harbor Stack | `public/apps/harbor-stack/privacy.html` | `com.muhtalipdede.harborstack` |
+| Metro Control | `public/apps/metro-control/privacy.html` | `com.muhtalipdede.metrocontrol` |
 
 Apps index: `app/apps/page.tsx` → https://muhtalipdede.github.io/apps
 
