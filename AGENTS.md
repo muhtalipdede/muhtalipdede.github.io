@@ -12,6 +12,7 @@ Personal site and **hosted Play privacy policies**. Live: https://muhtalipdede.g
 | Harbor Stack | `public/apps/harbor-stack/privacy.html` | `com.muhtalipdede.harborstack` |
 | Metro Control | `public/apps/metro-control/privacy.html` | `com.muhtalipdede.metrocontrol` |
 | Kelime Yolu | `public/apps/kelime-yolu/privacy.html` | `com.muhtalipdede.kelimeyolu` |
+| Merge Guardians | `public/apps/merge-guardians/privacy.html` | `com.muhtalipdede.mergeguardians` |
 
 Apps index: `app/apps/page.tsx` → https://muhtalipdede.github.io/apps
 
