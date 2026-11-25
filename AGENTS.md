@@ -13,6 +13,7 @@ Personal site and **hosted Play privacy policies**. Live: https://muhtalipdede.g
 | Metro Control | `public/apps/metro-control/privacy.html` | `com.muhtalipdede.metrocontrol` |
 | Kelime Yolu | `public/apps/kelime-yolu/privacy.html` | `com.muhtalipdede.kelimeyolu` |
 | Merge Guardians | `public/apps/merge-guardians/privacy.html` | `com.muhtalipdede.mergeguardians` |
+| Legends of the Steppe | `public/apps/legends-of-the-steppe/privacy.html` | `com.muhtalipdede.legendsofthesteppe` |
 
 Apps index: `app/apps/page.tsx` → https://muhtalipdede.github.io/apps
 
