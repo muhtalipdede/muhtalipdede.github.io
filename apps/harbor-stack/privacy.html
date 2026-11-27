@@ -39,7 +39,8 @@
     <tr><td>Ads</td><td>Android: optional rewarded videos for hints, and short ads between levels (never in the first 10 levels, never during a puzzle). Removable with the Remove ads purchase. Served by Google AdMob.</td></tr>
     <tr><td>In-app purchases</td><td>Android: hint packs, Remove ads and a starter pack, processed by Google Play. Restore in Settings.</td></tr>
     <tr><td>iOS</td><td>The iOS version currently has no ads and no purchases and collects no data.</td></tr>
-    <tr><td>Analytics</td><td>None</td></tr>
+    <tr><td>Crash reports</td><td>Google Firebase Crashlytics (Android); on by default, can be turned off in Settings</td></tr>
+    <tr><td>Analytics</td><td>Google Firebase Analytics (Android): usage and session statistics, no advertising ID</td></tr>
     <tr><td>Crash reports</td><td>None sent by the app</td></tr>
     <tr><td>Sale of personal data</td><td>No</td></tr>
   </table>
@@ -63,8 +64,15 @@
   <h2>7. Retention and deletion</h2>
   <p>To delete your progress, use Settings &rarr; Reset progress, clear the app's storage, or uninstall the app. There is no account or server copy to delete. Data processed by Google for ads is kept under Google's retention policies; you can reset your advertising ID in your device settings.</p>
 
-  <h2>8. Changes</h2>
-  <p>If a future version adds analytics, crash reporting, or ads and purchases on iOS, this policy will be updated before that version is released, with a new effective date.</p>
+  <h2>8. Usage statistics (Android)</h2>
+  <p>The Android app uses <strong>Google Firebase Analytics</strong> to see how many players come back and how long play sessions last, so the game can be improved. It records app opens, session length and screens, together with the device model, operating system and app version, an approximate country (derived from the IP address, which is not stored) and a random app-instance ID. Analytics does not collect the advertising ID, and this data is not used to personalise ads. Google processes it under its <a href="https://policies.google.com/privacy">privacy policy</a>; event-level data is kept for 2 months. Clearing the app's storage resets the app-instance ID.</p>
+
+  <h3>Crash reports (Android)</h3>
+  <p>To find and fix bugs, the Android app uses <strong>Google Firebase Crashlytics</strong>. When the app crashes or hits an error, a report is sent with the error and stack trace, the level you were playing, the app and OS version, the device model and a random Crashlytics installation ID. Reports do not include your name, email or advertising ID and are not used for advertising. You can turn this off in Settings &rarr; Send crash reports.</p>
+
+  <h2>9. Changes</h2>
+  <p>28 November 2026: Google Firebase Analytics and Crashlytics added to the Android app (section 8).</p>
+  <p>If a future version adds ads and purchases on iOS, this policy will be updated before that version is released, with a new effective date.</p>
 
   <p>Questions: <a href="mailto:muhtalipdede@gmail.com">muhtalipdede@gmail.com</a> · <a href="https://muhtalipdede.github.io">muhtalipdede.github.io</a></p>
 </body>
