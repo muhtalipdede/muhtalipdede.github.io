@@ -14,6 +14,7 @@ Personal site and **hosted Play privacy policies**. Live: https://muhtalipdede.g
 | Kelime Yolu | `public/apps/kelime-yolu/privacy.html` | `com.muhtalipdede.kelimeyolu` |
 | Merge Guardians | `public/apps/merge-guardians/privacy.html` | `com.muhtalipdede.mergeguardians` |
 | Legends of the Steppe | `public/apps/legends-of-the-steppe/privacy.html` | `com.muhtalipdede.legendsofthesteppe` |
+| Pop Cascade | `public/apps/pop-cascade/privacy.html` | `com.muhtalipdede.popcascade` |
 
 Apps index: `app/apps/page.tsx` → https://muhtalipdede.github.io/apps
 
