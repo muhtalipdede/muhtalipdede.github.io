@@ -36,7 +36,7 @@
     <tr><td>Where data is stored</td><td>On your device (Android DataStore / iOS UserDefaults)</td></tr>
     <tr><td>Ads</td><td>Android: Google AdMob — an optional rewarded “second chance” and occasional interstitials between runs (never during a round, none in your first games). Removable with the one-time Remove ads purchase. iOS: no ads.</td></tr>
     <tr><td>In-app purchases</td><td>Android: “Remove ads”, processed by Google Play Billing; Restore purchases in Settings</td></tr>
-    <tr><td>Analytics / crash SDKs</td><td>None</td></tr>
+    <tr><td>Analytics / crash SDKs</td><td>Google Firebase Analytics (Android): usage and session statistics, no advertising ID</td></tr>
     <tr><td>Sale of personal data</td><td>No</td></tr>
   </table>
 
@@ -55,7 +55,7 @@
   <p>Purchases go through Google Play Billing. Don't Blink does not receive your payment details. Use Restore purchases in Settings after reinstalling.</p>
 
   <h2>6. Third parties</h2>
-  <p><strong>Google Play</strong> and <strong>Apple App Store:</strong> distribution and store privacy disclosures apply. <strong>Google AdMob</strong> and <strong>Google Play Billing</strong> (Android) as described above. No analytics, crash, or social SDKs.</p>
+  <p><strong>Google Play</strong> and <strong>Apple App Store:</strong> distribution and store privacy disclosures apply. <strong>Google AdMob</strong> and <strong>Google Play Billing</strong> (Android) as described above. <strong>Google Firebase Analytics</strong> (Android) for usage statistics, as described in section 9. No crash or social SDKs.</p>
 
   <h2>7. Retention and deletion</h2>
   <p>Clear app storage or uninstall to remove Don't Blink data. <strong>Account deletion:</strong> not applicable — there are no accounts.</p>
@@ -63,7 +63,11 @@
   <h2>8. Children</h2>
   <p>Don't Blink is not directed at children under 13 (or the equivalent minimum age in your country).</p>
 
-  <h2>9. Changes</h2>
+  <h2>9. Usage statistics (Android)</h2>
+  <p>The Android app uses <strong>Google Firebase Analytics</strong> to see how many players come back and how long play sessions last, so the game can be improved. It records app opens, session length and screens, together with the device model, operating system and app version, an approximate country (derived from the IP address, which is not stored) and a random app-instance ID. Analytics does not collect the advertising ID, and this data is not used to personalise ads. Google processes it under its <a href="https://policies.google.com/privacy">privacy policy</a>; event-level data is kept for 2 months. Clearing the app's storage resets the app-instance ID.</p>
+
+  <h2>10. Changes</h2>
+  <p>28 November 2026: Google Firebase Analytics added to the Android app (section 9).</p>
   <p>Updates to this policy will change the effective date and, when required, the store listing and in-app disclosure.</p>
 
   <p>Questions: muhtalipdede@gmail.com</p>

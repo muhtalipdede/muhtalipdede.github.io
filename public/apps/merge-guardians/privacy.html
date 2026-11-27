@@ -39,7 +39,7 @@
     <tr><td>İlerlemenin saklandığı yer</td><td>Yalnızca cihazınız</td></tr>
     <tr><td>Reklam</td><td>Android ve iOS: isteğe bağlı ödüllü videolar (yenilince ikinci şans, zafer altınını 2 katına çıkarma, Mağaza'da ücretsiz elmas) ve savaşlar arasında kısa geçiş reklamları (ilk 3 bölümde ve savaş sırasında asla). Google AdMob tarafından sunulur. iOS'ta reklam takibi yalnızca izin verirseniz yapılır (Uygulama Takip Şeffaflığı).</td></tr>
     <tr><td>Uygulama içi satın alma</td><td>Reklamları kaldır (tek seferlik, Ayarlar'dan geri yüklenebilir) ve elmas paketleri (tüketilebilir); Google Play veya Apple App Store üzerinden.</td></tr>
-    <tr><td>Analitik</td><td>Yok (uygulamanın kendi analitiği yoktur)</td></tr>
+    <tr><td>Analitik</td><td>Google Firebase Analytics (Android): kullanım ve oturum istatistikleri, reklam kimliği yok</td></tr>
     <tr><td>Çökme raporu</td><td>Uygulama tarafından gönderilmez</td></tr>
     <tr><td>Kamera, mikrofon, rehber</td><td>Kullanılmaz</td></tr>
     <tr><td>Kişisel verinin satışı</td><td>Hayır</td></tr>
@@ -68,8 +68,12 @@
   <h2>8. Saklama ve silme</h2>
   <p>İlerlemenizi silmek için Ayarlar &rarr; İlerlemeyi sıfırla'yı kullanabilir, uygulamanın depolama alanını temizleyebilir veya uygulamayı kaldırabilirsiniz. Silinecek bir hesap veya sunucu kopyası yoktur. Reklamlar için Google tarafından işlenen veriler Google'ın saklama politikalarına tabidir; reklam kimliğinizi cihaz ayarlarından sıfırlayabilirsiniz.</p>
 
-  <h2>9. Değişiklikler</h2>
-  <p>İleride analitik, çökme raporu, bulut kayıt veya çevrim içi oyun (PvP) eklenirse bu politika, o sürüm yayımlanmadan önce yeni bir yürürlük tarihiyle güncellenir.</p>
+  <h2>9. Kullanım istatistikleri (Android)</h2>
+  <p>Android uygulaması, kaç oyuncunun geri döndüğünü ve oyun oturumlarının ne kadar sürdüğünü görüp oyunu geliştirmek için <strong>Google Firebase Analytics</strong> kullanır. Uygulama açılışları, oturum süresi ve ekranlar; cihaz modeli, işletim sistemi ve uygulama sürümü, yaklaşık ülke (IP adresinden çıkarılır, IP saklanmaz) ve rastgele bir uygulama kurulum kimliğiyle birlikte kaydedilir. Analytics reklam kimliğini toplamaz ve bu veriler reklam kişiselleştirmesi için kullanılmaz. Google bu verileri <a href="https://policies.google.com/privacy?hl=tr">gizlilik politikasına</a> göre işler; olay düzeyindeki veriler 2 ay saklanır. Uygulamanın depolama alanını temizlemek kurulum kimliğini sıfırlar.</p>
+
+  <h2>10. Değişiklikler</h2>
+  <p>28 Kasım 2026: Android uygulamasına Google Firebase Analytics eklendi (9. bölüm).</p>
+  <p>İleride çökme raporu, bulut kayıt veya çevrim içi oyun (PvP) eklenirse bu politika, o sürüm yayımlanmadan önce yeni bir yürürlük tarihiyle güncellenir.</p>
 
   <hr />
 
@@ -91,7 +95,7 @@
     <tr><td>Where progress is stored</td><td>Only on your device</td></tr>
     <tr><td>Ads</td><td>Android and iOS: optional rewarded videos (a second chance after defeat, double victory gold, free gems in the Market) and short ads between battles (never in the first 3 levels, never during a battle). Served by Google AdMob. On iOS, ad tracking happens only if you allow it (App Tracking Transparency).</td></tr>
     <tr><td>In-app purchases</td><td>Remove ads (one-time, restore in Settings) and gem packs (consumable), processed by Google Play or the Apple App Store.</td></tr>
-    <tr><td>Analytics</td><td>None (the app has no analytics of its own)</td></tr>
+    <tr><td>Analytics</td><td>Google Firebase Analytics (Android): usage and session statistics, no advertising ID</td></tr>
     <tr><td>Crash reports</td><td>None sent by the app</td></tr>
     <tr><td>Camera, microphone, contacts</td><td>Not used</td></tr>
     <tr><td>Sale of personal data</td><td>No</td></tr>
@@ -120,8 +124,12 @@
   <h2>8. Retention and deletion</h2>
   <p>To delete your progress, use Settings &rarr; Reset progress, clear the app's storage, or uninstall the app. There is no account or server copy to delete. Data processed by Google for ads is kept under Google's retention policies; you can reset your advertising ID in your device settings.</p>
 
-  <h2>9. Changes</h2>
-  <p>If a future version adds analytics, crash reporting, cloud saves or online play (PvP), this policy will be updated before that version is released, with a new effective date.</p>
+  <h2>9. Usage statistics (Android)</h2>
+  <p>The Android app uses <strong>Google Firebase Analytics</strong> to see how many players come back and how long play sessions last, so the game can be improved. It records app opens, session length and screens, together with the device model, operating system and app version, an approximate country (derived from the IP address, which is not stored) and a random app-instance ID. Analytics does not collect the advertising ID, and this data is not used to personalise ads. Google processes it under its <a href="https://policies.google.com/privacy">privacy policy</a>; event-level data is kept for 2 months. Clearing the app's storage resets the app-instance ID.</p>
+
+  <h2>10. Changes</h2>
+  <p>28 November 2026: Google Firebase Analytics added to the Android app (section 9).</p>
+  <p>If a future version adds crash reporting, cloud saves or online play (PvP), this policy will be updated before that version is released, with a new effective date.</p>
   </div>
 
   <p>Sorular / Questions: <a href="mailto:muhtalipdede@gmail.com">muhtalipdede@gmail.com</a> · <a href="https://muhtalipdede.github.io">muhtalipdede.github.io</a></p>
